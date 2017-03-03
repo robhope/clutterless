@@ -1,0 +1,48 @@
+/* Make those fonts sexy */
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "liga" on;
+  margin: 0;
+}
+
+/* There is a known bug with Windows + Chrome rending Google Fonts */
+/* see: http://stackoverflow.com/a/22025804  */
+body {
+-webkit-animation-delay: 0.1s;
+-webkit-animation-name: fontfix;
+-webkit-animation-duration: 0.1s;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes fontfix {
+from { opacity: 1; }
+to   { opacity: 1; }
+}
+
+/* ------------------------------------------------ */
+/* General Styles */
+/* ------------------------------------------------ */
+
+html, ul, li {margin: 0px;padding: 0px; }
+body {font-size: 14px; line-height: 22px; line-height: 100%; margin: 0; padding: 0; }
+a {text-decoration: none;}
+a:hover {text-decoration: none;}
+a img { border:none; vertical-align:top; }
+img.alignright {margin: 10px 0 0 20px; float: right;}
+img.alignleft {margin: 10px 20px 0 0; float: left;}
+img.aligncenter {clear: both;display: block;margin: 0 auto 10px auto;}
+.relative {position: relative}
+p {margin-bottom: 20px; }
+b, strong {font-weight: bold;}
+.clear {clear:both;}
+h4, h5, h6 {margin: 0 0 10px 0;}
+ol, ul {margin: 0 0 20px 25px;}
+ol li {list-style-type: decimal; padding: 0 0 10px 0;}
+ul li {list-style-type: circle; padding: 0 0 5px 5px;}
+i, em {font-style: italic}
+hr {border: none; border-bottom: 1px dotted; margin: 20px 0; }
+del {text-decoration: line-through;}
+*:focus {outline: none;} /* Removes yellowing of forms */

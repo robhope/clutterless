@@ -1,31 +1,22 @@
 <?php
+/**
+ *
+ * @package clutterless
+ * @since clutterless 1.8
+ * @license GPL 2.0
+ * 
+ */
 
-// Clutterless functions.php index:
+# ------------------------------------------------------------------------
+# Theme definitions
+# ------------------------------------------------------------------------
 
-// 00. Defining 
-// 01. AJAX Loading Archive Posts
-// 02. Set number of archive & search results
-// 03. Exclude pages from search results
-// 04. Enable sidebar
-// 05. Theme Recommendations & Options
-// 06. Theme Customizer
-// 07. Enqueue Scripts and Styles
-// 08. Theme Update System
+define( 'clutterless_theme_version' , '1.8' );  		# Theme version
+if ( ! isset( $content_width ) ) $content_width = 600;  # Content Width
 
-// -------------------------------------------------------------
-// 00. Defining
-// -------------------------------------------------------------
-
-// Theme Version
-define( 'CLUTTERLESS_THEME_VERSION' , '1.7' );
-
-// Content Width
-global $content_width;
-if ( ! isset( $content_width ) ) $content_width = 600;
-
-// -------------------------------------------------------------
-// 01. AJAX Loading Archive Posts
-// -------------------------------------------------------------
+# ------------------------------------------------------------------------
+# Theme incudes
+# ------------------------------------------------------------------------
 
 function clutterless_pbd_alp_init() {
  	global $wp_query;
@@ -60,51 +51,17 @@ function clutterless_pbd_alp_init() {
 
  add_action('template_redirect', 'clutterless_pbd_alp_init');
 
-// -------------------------------------------------------------
-// 02. Set number of archive & search results
-// -------------------------------------------------------------
 
-add_filter('pre_get_posts', 'clutterless_change_wp_search_size'); // Hook our custom function onto the request filter
-function clutterless_change_wp_search_size($query) {
-	if ( $query->is_search ) // Make sure it is a search page
-	    $query->query_vars['posts_per_page'] = 100; // Change 100 to the number of posts you would like to show
-	return $query; // Return our modified query variables
-}
 
-add_filter('pre_get_posts', 'clutterless_change_wp_archive_size'); // Hook our custom function onto the request filter
-function clutterless_change_wp_archive_size($query) {
-	if ( $query->is_archive ) // Make sure it is a search page
-	    $query->query_vars['posts_per_page'] = 100; // Change 100 to the number of posts you would like to show
-	return $query; // Return our modified query variables
-}
 
-// -------------------------------------------------------------
-// 03. Exclude pages from search results
-// -------------------------------------------------------------
 
-add_filter('pre_get_posts','clutterless_mySearchFilter');
-function clutterless_mySearchFilter($query) {
-	 if ($query->is_search) {
-	    $query->set('post_type', 'post');
-	 }
-	 return $query;
-}
 
- // -------------------------------------------------------------
- // 04. Enable Widgets
- // -------------------------------------------------------------
 
-add_action('widgets_init', 'clutterless_register_sidebars');
-function clutterless_register_sidebars(){
-	register_sidebar(array(
-		'name' 			=> 'Sidebar Widgets',
-		'id'            => 'clutterless-sidebar-1',
-		'before_widget' => '<div class="sidebar-widget">',
-		'after_widget' 	=> '</div>',
-		'before_title' 	=> '<span class="sidebar-widget-title">',
-		'after_title' 	=> '</span>',
-	));
-}
+require_once( get_template_directory() . '/backend/functions/widgets.php'			); 	# Set number of archive & search results
+require_once( get_template_directory() . '/backend/functions/widgets.php'			); 	# Widgets
+require_once( get_template_directory() . '/backend/functions/clean-up.php'			); 	# WordPress Clean-up
+require_once( get_template_directory() . '/backend/functions/indent-head.php'		); 	# Ultra geeky wp_head indentation
+require_once( get_template_directory() . '/backend/functions/update-system.php'		); 	# Theme Update System
 
 
 // -------------------------------------------------------------
@@ -330,7 +287,7 @@ function get_current_template( $echo = false ) {
 add_action('wp_enqueue_scripts', 'clutterless_enqueue_scripts');
 function clutterless_enqueue_scripts(){	
 	// Clutterless Stylesheet	
-	wp_enqueue_style( 'clutterless', get_stylesheet_uri(), array(), CLUTTERLESS_THEME_VERSION );
+	wp_enqueue_style( 'clutterless', get_stylesheet_uri(), array(), clutterless_theme_version );
 
 	// Clutterless Google Fonts
 	wp_enqueue_style('google-webfonts-nc', 'http://fonts.googleapis.com/css?family=News+Cycle:400');
@@ -414,11 +371,7 @@ function clutterless_customizer_styles(){
 	<?php
 }
 
-// -------------------------------------------------------------
-// 08. Theme Update System
-// -------------------------------------------------------------
 
-require_once( dirname( __FILE__ ) . '/incl/theme-update-checker.php'  );
-require_once( dirname( __FILE__ ) . '/incl/theme-update-settings.php' );
+
 
 ?>

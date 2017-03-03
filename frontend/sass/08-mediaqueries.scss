@@ -1,0 +1,53 @@
+
+
+// ----------------------------------------------------------------------------------------------------- */
+// Clutterless WordPress Theme Tablet & Mobile Device Styles */
+// ----------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 720px) {
+
+/* Containers */
+body {}    
+#content {width: auto; max-width: 90%; padding-top: 0; margin-top: 0; }  
+
+/* Sidebar */  
+#sidebar-name {display: none;}
+#sidebar {float: auto;display: block;position: relative; height: auto; top: 0;  width: auto !important; left: 0px !important; padding: 0 !important; margin: 0 !important;}
+#sidebar-inner {float: auto; display: block; top: 0; left: 0px !important;   position: relative; padding: 2% 5%; width: auto; }
+#sidebar:hover {left: 0;}
+#sidebar-inner #sidebar-logo {margin: 0 auto 0 auto; width: 90%; }
+#sidebar-inner #sidebar-logo .logo {margin: 15px 0 20px 0;}
+#sidebar-inner #sidebar-logo .logo-name {width: 74%;}
+#sidebar-inner #sidebar-logo .tagline {width: auto;}
+#sidebar-inner #sidebar-bio {width: auto;}
+
+/* Dropdown */  
+#sidebar-inner #sidebar-logo {float: left; }  
+#sidebar #sidebar-dropdown {display: block; float: right; padding-top: 1%;}   
+#sidebar #sidebar-dropdown a {font-size: 58px; line-height:58px; opacity: 0.6;}
+#sidebar #sidebar-dropdown a:hover, #sidebar #sidebar-dropdown a:active {opacity: 1;}
+#sidebar-mobile-info {display: none;}
+  
+/* AJAX Load button */  
+#pbd-alp-load-posts a:link, #pbd-alp-load-posts a:visited  {width: 200px;}
+  
+/* Posts */  
+#content  .post {max-width: 100%;padding: 40px 0 15px 0;}
+#content  .post-title h2 {letter-spacing: -2px; font-size: 30px; line-height: 35px; }
+#content  .post-title {margin-bottom: 25px;}
+#content  .post-content {font-size: 16px; line-height: 24px;  } 
+#content  .post-content p {font-size: 16px; line-height: 24px;  margin: 0 0 25px 0;}
+#content  .post-content h2 {font-size: 28px; line-height: 32px;  margin: 50px 0 20px 0; letter-spacing: -1px;}
+#content  .post-content h3 {font-size: 22px; line-height: 26px;  margin: 40px 0 10px 0; letter-spacing: -1px;}
+#content  .post-content h4 {font-size: 18px; line-height: 22px;  margin: 30px 0 5px 0; letter-spacing: -1px;}  
+#content  .post-content blockquote {margin: 30px 0 30px 20px;}
+#content  .post-content img {max-width: 94%;}
+#content  .post-content .wp-caption {max-width: 94%;}  
+
+/* Search */    
+#search-page #search-header #search-term {margin-top: 30px; line-height: 40px;}
+  
+/* End of Media Query */
+}
+
+
