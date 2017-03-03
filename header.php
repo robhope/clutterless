@@ -1,12 +1,24 @@
-<!DOCTYPE HTML>
+<?php
+/**
+ * Default theme header
+ *
+ * Displays the <head> section as well as the opening tag for the body
+ * 
+ * @package clutterless
+ * @since clutterless 1.8.1
+ * @license GPL 2.0
+ * 
+ */
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+
 <head>
-<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+
+	<meta charset="<?php bloginfo('charset'); ?>" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 	<title><?php bloginfo('name'); ?></title>
-	
-	<!-- Meta -->
-	<meta charset = "UTF-8" />
 	
 	<!-- Responsive stylesheet -->
 	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
@@ -21,7 +33,7 @@
 
 </head>
 
-<body <?php body_class(); ?> id="<?php if(get_option('clutterless_ajaxify', '1')=='0') {echo ('ajax-on'); } else {echo ('ajax-off');};?>">
+<body <?php body_class(); ?> >
 
   <?php get_sidebar(); ?>
 

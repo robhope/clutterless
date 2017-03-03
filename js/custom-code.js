@@ -1,3 +1,48 @@
+// ------------------------------------------------------------------------
+// Mobile Nav Toggle
+// ------------------------------------------------------------------------
+
+function toggle_visibility(id) {
+var e = document.getElementById(id);
+if(e.style.display == 'block')
+e.style.display = 'none';
+else
+e.style.display = 'block';
+}
+
+// ------------------------------------------------------------------------
+// iPad Tap Slider
+// ------------------------------------------------------------------------
+
+if (navigator.userAgent.match(/iPad/i) != null) {
+	$(function() {
+				
+		function slideIn() {
+			$('#sidebar').css({left:'450px'});
+			$('#sidebar-inner').css({left:'0px'});
+		}
+		function slideOut() {
+			$('#sidebar').css({left:'0px'});
+			$('#sidebar-inner').css({left:'-450px'});
+		}
+		
+  		$('#sidebar-name').click( function(e) {
+			if ($('#sidebar').position().left == 0)
+				slideIn();
+			else
+				slideOut();
+		});
+				
+		$('#ipad-click').click( function() {
+			slideOut();
+		})
+	});
+}
+
+// ------------------------------------------------------------------------
+// AJAX Loading Archives
+// ------------------------------------------------------------------------
+
 jQuery(document).ready(function($) {
 	// The number of the next page to load (/page/x/).
 	var pageNum = parseInt(pbd_alp.startPage) + 1;
