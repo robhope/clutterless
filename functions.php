@@ -2,7 +2,7 @@
 /**
  *
  * @package clutterless
- * @since clutterless 1.8.1
+ * @since clutterless 1.8.2
  * @license GPL 2.0
  * 
  */
@@ -11,7 +11,7 @@
 # Theme definitions
 # ------------------------------------------------------------------------
 
-define( 'clutterless_theme_version' , '1.8.1' );  		# Theme version
+define( 'clutterless_theme_version' , '1.8.2' );  		# Theme version
 if ( ! isset( $content_width ) ) $content_width = 600;  # Content Width
 
 # ------------------------------------------------------------------------
@@ -28,5 +28,3 @@ require_once( get_template_directory() . '/backend/functions/options.php'			); 	
 require_once( get_template_directory() . '/backend/functions/customizer.php'		); 	# Theme Customizer
 require_once( get_template_directory() . '/backend/functions/enqueue.php'			); 	# Enqueue Scripts and Styles
 
-
-?>

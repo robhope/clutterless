@@ -5,7 +5,7 @@
  * Displays the <head> section as well as the opening tag for the body
  * 
  * @package clutterless
- * @since clutterless 1.8.1
+ * @since clutterless 1.8.2
  * @license GPL 2.0
  * 
  */
@@ -21,7 +21,7 @@
 	<title><?php bloginfo('name'); ?></title>
 	
 	<!-- Responsive stylesheet -->
-	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	
 	<!-- RSS Feed -->
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />

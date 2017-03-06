@@ -9,7 +9,7 @@
         <div id="search-header">
 
               <div id="search-term">
-                <?php printf( __( '%d %s' ), $wp_query->found_posts, _n( 'search result', 'search results', $wp_query->found_posts), get_search_query() ); ?> for <?php echo ' &quot;'.wp_specialchars($s).'&quot;'; ?>
+                <?php printf( __( '%d %s' ), $wp_query->found_posts, _n( 'search result', 'search results', $wp_query->found_posts), get_search_query() ); ?> for <?php echo ' &quot;'.esc_html($s).'&quot;'; ?>
               </div><!-- #search-term -->    
     
               <div id="search">

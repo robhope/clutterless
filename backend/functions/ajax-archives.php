@@ -2,7 +2,7 @@
 /**
  *
  * @package clutterless
- * @since clutterless 1.8
+ * @since clutterless 1.8.2
  * @license GPL 2.0
  * 
  */
@@ -21,7 +21,7 @@ function clutterless_pbd_alp_init() {
 
         wp_enqueue_script(
             'pbd-alp-load-posts',
-            get_template_directory_uri().'/js/custom-code-min.js',
+            get_template_directory_uri().'/frontend/js/custom-code-min.js',
             array('jquery'),
             '1.0',
             true
