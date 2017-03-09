@@ -2,7 +2,7 @@
 /**
  *
  * @package clutterless
- * @since clutterless 1.8.2
+ * @since clutterless 1.8.3
  * @license GPL 2.0
  * 
  */
@@ -11,7 +11,7 @@
 # Theme definitions
 # ------------------------------------------------------------------------
 
-define( 'clutterless_theme_version' , '1.8.2' );  		# Theme version
+define( 'clutterless_theme_version' , '1.8.3' );  		# Theme version
 if ( ! isset( $content_width ) ) $content_width = 600;  # Content Width
 
 # ------------------------------------------------------------------------
@@ -25,6 +25,5 @@ require_once( get_template_directory() . '/backend/functions/clean-up.php'			); 
 require_once( get_template_directory() . '/backend/functions/indent-head.php'		); 	# Ultra geeky wp_head indentation
 require_once( get_template_directory() . '/backend/functions/update-system.php'		); 	# Theme Update System
 require_once( get_template_directory() . '/backend/functions/options.php'			); 	# Theme Recommendations and Options
-require_once( get_template_directory() . '/backend/functions/customizer.php'		); 	# Theme Customizer
 require_once( get_template_directory() . '/backend/functions/enqueue.php'			); 	# Enqueue Scripts and Styles
-
+require_once( get_template_directory() . '/backend/functions/customizer.php'		); 	# Theme Customizer

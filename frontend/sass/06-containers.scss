@@ -1,0 +1,68 @@
+/* --- Containers --- */
+
+//-------------------------------------------------------------------------------
+// Containers
+//-------------------------------------------------------------------------------
+
+#content {width: 600px; margin: 0 auto;  padding: 0 0 75px 0; }
+
+//-------------------------------------------------------------------------------
+// Archives
+//-------------------------------------------------------------------------------
+
+#content {margin-top: 100px;}
+
+#content  .post {padding: 60px 0 25px 0; margin: 0 0 0px 0; width: 600px;}
+#content  .post-date {font-size: 11px; line-height: 11px; text-transform: uppercase; margin-bottom: 5px; font-weight: 300; letter-spacing: 0.5px;}
+#content  .post-date, #content  .post-date a {}
+#content  .post-title {margin-bottom: 35px;}
+#content  .post-title h2 {font-weight: 700; letter-spacing: -1.5px; font-size: 40px; line-height: 46px; text-tranform: uppercase;}
+#content  .post-content {font-size: 19px; line-height: 29px;  margin: 0;padding: 0;} 
+#content  .post-content p {font-size: 19px; line-height: 29px;  margin: 0 0 35px 0; padding: 0; letter-spacing: 0px;}
+#content  .post-content h2 {font-size: 28px; line-height: 32px;  margin: 60px 0 30px 0; letter-spacing: -1px;}
+#content  .post-content h3 {font-size: 24px; line-height: 28px;  margin: 50px 0 20px 0; letter-spacing: -1px;}
+#content  .post-content h4 {font-size: 20px; line-height: 24px;  margin: 40px 0 10px 0; letter-spacing: -1px;}
+#content  .post-content img {max-width: 580px; height: auto;  padding: 10px;  -moz-box-shadow:  0px 0px 5px 0px #DDD; -webkit-box-shadow:0px 0px 5px 0px #DDD; box-shadow:0px 0px 5px 0px #EEE;}
+#content  .post-content blockquote {opacity: 0.5}
+#content  .post-content .wp-caption {text-align: center;}
+#content  .post-content p.wp-caption-text {opacity: 0.5; font-size: 16px; line-height: 18px; padding: 5px 0; }
+#content  .post-content blockquote {letter-spacing: -0.1px; font-style: italic; padding: 0 0 0 20px; margin: 40px 0 40px 20px;border-left: 1px dotted #999;}
+#content  .post-content strong {font-weight: bold;}
+#content a {-webkit-transition-duration: 0.3s;-moz-transition-duration: 0.3s; -o-transition-duration: 0.3s;	transition-duration: 0.3s;}
+#content a:hover {-webkit-transition-duration: 0.1s;-moz-transition-duration: 0.1s;	-o-transition-duration: 0.1s;	transition-duration: 0.1s;}
+
+// AJAX Load Button 
+#pbd-alp-load-posts a:link, #pbd-alp-load-posts a:visited {
+display: block;  width: 300px;  margin: 0 auto 100px auto;	text-align: center;	padding: 10px 7px 14px 7px; 
+border: none; background: #F5F5F5; font-size: 14px; line-height: 14px; color: #999;letter-spacing: 1px;
+text-decoration: none;   text-transform: uppercase; border-top: 1px solid #FFF; border-bottom: 1px solid #E5e5e5;
+-webkit-border-radius: 4px;-moz-border-radius:  4px;border-radius:  4px;
+}
+#pbd-alp-load-posts a:hover, #pbd-alp-load-posts a:active {	background-color: #FFFFFF; color: #333;}
+
+
+//-------------------------------------------------------------------------------
+// Single Posts
+//-------------------------------------------------------------------------------
+
+#return {font-size: 12px; text-transform: uppercase; margin-bottom: 50px;}
+#post-tags {display:none}/* unhide if you want tags */
+
+//-------------------------------------------------------------------------------
+// Search
+//-------------------------------------------------------------------------------
+
+#search-page #search {}
+#search-page #search-header #search-term {letter-spacing: -2px; font-size: 32px;}
+#search-page #search {padding: 20px 0; border-top: 1px solid rgb(255, 255, 255); border-top: 1px solid rgba(255, 255, 255, .15);-webkit-background-clip: padding-box;   background-clip: padding-box;}
+#search-page #search #search-form {}
+#search-page #search #search-form #search-field {border: none; background-color:  #EEE; color: #111; height: 20px; width: 94%; padding: 4px 10px 6px 10px; font-size: 12px}
+#search-page #search #search-form #search-button {display: none;}
+
+#search-page .archive-post {border-bottom: 1px solid #EEE; padding: 0px 0 10px 0; margin: 10px 0 10px;}
+#search-page .archive-post .archive-date {font-size: 10px; line-height: 10px; text-transform: uppercase; font-weight: 300; letter-spacing: 0.5px; color: #999;}
+#search-page .archive-post .archive-title {font-size: 18px; line-height: 22px; margin: 0; }
+
+
+
+

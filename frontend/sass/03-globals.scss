@@ -16,23 +16,115 @@
 // General styles
 //-------------------------------------------------------------------------------
 
-html, ul, li {margin: 0px;padding: 0px; }
-body {font-size: 14px; line-height: 22px; line-height: 100%; margin: 0; padding: 0; }
-a {text-decoration: none;}
-a:hover {text-decoration: none;}
-a img { border:none; vertical-align:top; }
-img.alignright {margin: 10px 0 0 20px; float: right;}
-img.alignleft {margin: 10px 20px 0 0; float: left;}
-img.aligncenter {clear: both;display: block;margin: 0 auto 10px auto;}
-.relative {position: relative}
-p {margin-bottom: 20px; }
-b, strong {font-weight: bold;}
-.clear {clear:both;}
-h4, h5, h6 {margin: 0 0 10px 0;}
-ol, ul {margin: 0 0 20px 25px;}
-ol li {list-style-type: decimal; padding: 0 0 10px 0;}
-ul li {list-style-type: circle; padding: 0 0 5px 5px;}
-i, em {font-style: italic}
-hr {border: none; border-bottom: 1px dotted; margin: 20px 0; }
-del {text-decoration: line-through;}
-*:focus {outline: none;} // Removes yellowing of forms 
+html {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	margin: 0 0 20px 25px;
+	li {
+		list-style-type: circle;
+		padding: 0 0 5px 5px;
+	}
+}
+li {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 14px;
+	line-height: 22px;
+	line-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+	img {
+		border: none;
+		vertical-align: top;
+	}
+}
+img {
+	&.alignright {
+		margin: 10px 0 0 20px;
+		float: right;
+	}
+	&.alignleft {
+		margin: 10px 20px 0 0;
+		float: left;
+	}
+	&.aligncenter {
+		clear: both;
+		display: block;
+		margin: 0 auto 10px auto;
+	}
+}
+.relative {
+	position: relative;
+}
+p {
+	margin-bottom: 20px;
+}
+b {
+	font-weight: bold;
+}
+strong {
+	font-weight: bold;
+}
+.clear {
+	clear: both;
+}
+h4 {
+	margin: 0 0 10px 0;
+}
+h5 {
+	margin: 0 0 10px 0;
+}
+h6 {
+	margin: 0 0 10px 0;
+}
+ol {
+	margin: 0 0 20px 25px;
+	li {
+		list-style-type: decimal;
+		padding: 0 0 10px 0;
+	}
+}
+i {
+	font-style: italic;
+}
+em {
+	font-style: italic;
+}
+hr {
+	border: none;
+	border-bottom: 1px dotted;
+	margin: 20px 0;
+}
+del {
+	text-decoration: line-through;
+}
+*:focus { // Removes Yellow from forms
+	outline: none;
+}
+
+//-------------------------------------------------------------------------------
+// WordPress requirements
+//-------------------------------------------------------------------------------
+
+.sticky{}
+.gallery-caption{}
+.bypostauthor {}
+
+video, 
+iframe {
+	width: 100%;
+}
+
+

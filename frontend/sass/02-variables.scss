@@ -40,13 +40,6 @@ $font-fam-bloc			: Palatino Linotype, Palatino, Georgia, Serif;
 $font-fam-geor			: Georgia, Serif;
 
 //-------------------------------------------------------------------------------
-// Images
-//-------------------------------------------------------------------------------
-
-$heart-logo				: 	'https://onepagelove.com/wp-content/themes/onepagelove/img/heart.png';
-$background-icon		: 	'https://onepagelove.com/wp-content/themes/onepagelove/img/backgrounds/pattern-icons.png';
-
-//-------------------------------------------------------------------------------
 // Breakpoints
 //-------------------------------------------------------------------------------
 
@@ -61,59 +54,7 @@ $bp-mobilesm		 	: 400px;
 // Colors
 //-------------------------------------------------------------------------------
 
-// Backgrounds
-$color-browser-bg    	: #E2E2E2;
-$color-header 			: #1E1E1E;
-$color-page-bg       	: #FFFFFF;
-$color-footer    		: #141414;
-$color-code			 	: #F8F8F8;
 
-// Fonts
-$color-body-font     	: #999999;
-$color-white     		: #FFFFFF;
-$color-main-link     	: #FD6CA3; // Pink from logo
-$color-main-link-hover  : #EC3D80; 
-$color-darker-link   	: #EC3D80;
-$color-darkest-link  	: #D52468;
-$color-blue-link     	: #11C1f4;
-$color-blue-link-hover  : #11acf4;
-
-// Logo
-$color-logo-text		: #FFFFFF;
-
-// Connect Dropdown
-$color-rss 				: #ee802f;
-$color-facebook			: #3b5998;
-$color-twitter			: #55acee;
-$color-pinterest		: #cb2027;
-$color-googleplus		: #dd4b39;
-$color-producthunt		: #da552f;
-$color-dribbble			: #ea4c89;				
-				
-// Search Bar
-$color-search-bg		: #F2f2f2;
-$color-search-svg		: #BBBBBB;
-$color-search-text		: #CCCCCC;
-$color-search-focus		: #666666;
-
-// Testing
-$test1		 		 	: #ff33cc;
-$test2		 			: #cc33ff;
-$test3		 			: #33ccff;
-$test4		 			: #ccff33;
-$test5		 			: #ffcc33;
-
-// Footer 
-$color-footer-text		: #444444;
-
-//-------------------------------------------------------------------------------
-// Misc
-//-------------------------------------------------------------------------------
-
-$review-heart 			: 1.75rem; // 28px
-$review-body-color		: #777777;
-$review-meta-color		: #666666;
-$review-testi-color		: #AAAAAA;
 
 //-------------------------------------------------------------------------------
 // Rounded Corners
@@ -155,19 +96,3 @@ $shadow-global		:  0px 0px 10px 0px rgba(39, 49, 65, 0.1);
 // 20px = 1.25rem
 // 30px = 1.875rem  
 // 40px = 2.5rem
-
-//-------------------------------------------------------------------------------
-// Typekit Weights 
-//-------------------------------------------------------------------------------
-
-// Proxima Nova Soft
-// - Medium 500
-// - Semibold 600
-// - Bold 700
-
-// Proxima Nova
-// - Light 300
-// - Regular 400 (not published)
-// - Semibold 600
-// - Bold 700 (not published)
-

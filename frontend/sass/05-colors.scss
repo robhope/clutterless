@@ -1,0 +1,52 @@
+/* --- Colors --- */
+
+//-------------------------------------------------------------------------------
+// Color Scheme
+//-------------------------------------------------------------------------------
+
+/* browser background */
+body {background: #F8F8F8;}
+
+/* Links Default */
+a {color: #333;}
+a:hover {color: #333;}
+
+/* Sidebar background */
+#sidebar-name .sidebar-name-wrap,
+#sidebar-inner
+{ background: #18bceb;}
+
+/* Sidebar font and link color (same) */
+#sidebar,
+#sidebar a,
+#sidebar-inner #search #search-form #search-field
+{color: #FFF;}
+
+/* Blog seperator lines */
+#content .post 
+{border-top: 1px solid #FFFFFF; box-shadow: 0 -1px 0 #DDDDDD;}
+
+/* Blog text color and shadow */
+#content {color: #666; text-shadow: 0 1px 0 #FFF;}
+
+/* Blog titles */
+#content  .post-date, #content  .post-date a, #return a {color:  #999;}
+#content .post-title h2, #content .post-title h2 a {color: #333;}
+
+/* Blog links */
+#content .post-content a 
+{color: #333; border-bottom: 1px dotted #333;}
+#content .post-content a:hover 
+{color: #18bceb; border-bottom: 1px dotted #18bceb; }
+
+/* Blog headings & Bold */
+#content  .post-content h2,
+#content  .post-content h3,
+#content  .post-content h4
+{color: #444;}
+
+/* Blog image borders */
+#content  .post-content img {background: #FFF;}
+
+/* Blockquote */
+#content  .post-content blockquote {}
