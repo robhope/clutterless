@@ -19,6 +19,7 @@
 html {
 	margin: 0;
 	padding: 0;
+	height: 100%;
 }
 ul {
 	margin: 0;
@@ -112,6 +113,18 @@ del {
 }
 *:focus { // Removes Yellow from forms
 	outline: none;
+}
+
+//-------------------------------------------------------------------------------
+// Make those fonts sexy
+//-------------------------------------------------------------------------------
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "liga" on;
+  margin: 0;
 }
 
 //-------------------------------------------------------------------------------

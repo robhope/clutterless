@@ -1,7 +1,7 @@
 /*
 Theme Name: Clutterless
 Theme URI: https://onepagetemplates.com/clutterless
-Version: 1.8.3
+Version: 1.8.4
 Description: A Minimal Blogging WordPress Theme by One Page Love. Clutterless is a free minimal single-column WordPress theme absolutely perfect for distraction-free blogging.
 Author: One Page Love
 Author URI: https://onepagelove.com
@@ -47,7 +47,7 @@ input[type=text] { border: none; }
 /* --- Globals --- */
 * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; -moz-font-feature-settings: "liga" on; margin: 0; }
 
-html { margin: 0; padding: 0; }
+html { margin: 0; padding: 0; height: 100%; }
 
 ul { margin: 0; padding: 0; margin: 0 0 20px 25px; }
 
@@ -99,16 +99,14 @@ del { text-decoration: line-through; }
 
 *:focus { outline: none; }
 
+* { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; -moz-font-feature-settings: "liga" on; margin: 0; }
+
 video, iframe { width: 100%; }
 
 /* --- Fonts --- */
-* { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; -moz-font-feature-settings: "liga" on; margin: 0; }
+body { font-family: "PT Serif", serif; }
 
-html { height: 100%; }
-
-body { font-family: 'News Cycle', sans-serif; font-weight: 400; }
-
-#content .post-title h2, #content .post-content h2, #content .post-content h3, #content .post-content h4, #sidebar-inner #sidebar-logo .logo-name h1, #sidebar-inner #sidebar-widgets .sidebar-widget-title, #search-page #search-header #search-term { font-family: 'Merriweather', serif; font-weight: 700; }
+#content .post-title h2, #content .post-content h2, #content .post-content h3, #content .post-content h4, #sidebar-inner #sidebar-logo .logo-name h1, #sidebar-inner #sidebar-widgets .sidebar-widget-title, #search-page #search-header #search-term { font-family: "Roboto", Arial, sans-serif; }
 
 /* --- Colors --- */
 /* browser background */

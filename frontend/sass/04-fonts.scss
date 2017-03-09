@@ -1,25 +1,12 @@
 /* --- Fonts --- */
 
 //-------------------------------------------------------------------------------
-// Make those fonts sexy
-//-------------------------------------------------------------------------------
-
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  -moz-font-feature-settings: "liga" on;
-  margin: 0;
-}
-
-//-------------------------------------------------------------------------------
 // Fonts
 //-------------------------------------------------------------------------------
 
-html {height:100%;}
-
-body 
-{font-family: 'News Cycle', sans-serif; font-weight: 400; }
+body {
+	font-family: $pts;
+}
 
 #content .post-title h2,
 #content .post-content h2,
@@ -27,5 +14,6 @@ body
 #content .post-content h4,
 #sidebar-inner #sidebar-logo .logo-name h1, 
 #sidebar-inner #sidebar-widgets .sidebar-widget-title,
-#search-page #search-header #search-term
-{font-family: 'Merriweather', serif; font-weight: 700;}
+#search-page #search-header #search-term {
+	font-family: $rob;
+}
