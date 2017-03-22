@@ -8,8 +8,10 @@
  */
 
 // -------------------------------------------------------------
-// Update System
+// WordPress Title Tag
 // -------------------------------------------------------------
 
-include( dirname( __FILE__ ) . '/theme-update-checker.php'  );
-include( dirname( __FILE__ ) . '/theme-update-settings.php' );
+function clutterless_setup() {
+
+    add_theme_support( 'title-tag' );
+}

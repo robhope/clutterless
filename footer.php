@@ -1,7 +1,9 @@
 
- </div></div><!-- #content #ipad-click --> 
+ 	</div><!-- #content --> 
 
- <div class="clear"></div>
+</div><!-- #ipad-click --> 
+
+<div class="clear"></div>
 
 <?php wp_footer(); ?>
 

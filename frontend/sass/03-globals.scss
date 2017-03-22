@@ -131,9 +131,17 @@ del {
 // WordPress requirements
 //-------------------------------------------------------------------------------
 
-.sticky{}
-.gallery-caption{}
-.bypostauthor {}
+.sticky, 
+.gallery-caption, 
+.bypostauthor,
+.screen-reader-text {
+	display: default; 
+}
+
+// Pagination required by WP but not needed
+.pagination {
+	display: none;
+}
 
 video, 
 iframe {

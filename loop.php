@@ -1,21 +1,26 @@
 <div class="post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-  <div class="post-date">
+	<div class="post-date">
 
-    <a href="<?php the_permalink(); ?>"><?php echo the_time('j F Y') ?></a>
+		<a href="<?php the_permalink(); ?>"><?php echo the_time(get_option('date_format')) ?></a>
 
-  </div><!-- .post-date -->
+	</div><!-- .post-date -->
 
-  <div class="post-title">
+	<div class="post-title">
 
-    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2> 
+		<h2><?php the_title(); ?></h2> 
 
-  </div><!-- .post-title -->
+	</div><!-- .post-title -->
 
-  <div class="post-content">
+	<div class="post-content">
 
-      <?php the_content();?>
+		<?php the_content();?>
 
-  </div><!-- .post-content -->
+		<!-- Tags display need to be a theme option -->
+		<?php if ( is_singular() ) { the_tags('', ' ', ' '); }; ?>
+
+		<?php if ( is_singular() ) {  wp_link_pages(); }; ?>
+
+	</div><!-- .post-content -->
 
 </div><!-- /.post -->

@@ -20,7 +20,7 @@ $wp_customize->remove_section( 'colors');
 
 	/* Section for the theme customizer */
 	$wp_customize->add_section( 'clutterless_options_theme_customizer_appearance', array(
-		'title' => __( 'Appearance', 'clutterless_options_theme_customizer' ),
+		'title' => __( 'Appearance', 'clutterless' ),
 		'priority' => 100
 	) );
 	
@@ -174,7 +174,7 @@ function clutterless_customizer_styles(){
 		{color: <?php echo $color['clutterless_content_post_title']; ?>;}
 		#content  .post-content h2,#content  .post-content h3,#content  .post-content h4
 		{color: <?php echo $color['clutterless_content_post_headings']; ?>;}
-		#content  .post-date, #content  .post-date a, #return a
+		#content  .post-date, #content  .post-date a, .return a
 		{color: <?php echo $color['clutterless_content_post_date']; ?>;}
 		#content .post-content a
 		{color: <?php echo $color['clutterless_content_post_links']; ?>;  border-bottom: 1px dotted <?php echo $color['clutterless_content_post_links']; ?>;}

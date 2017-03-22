@@ -11,8 +11,8 @@
 // Customizer Setup
 // -------------------------------------------------------------
 
-require_once( get_template_directory() . '/backend/customizer/appearance.php'		); 	# Colors
-require_once( get_template_directory() . '/backend/customizer/panels.php'			); 	# Panel Setup
-require_once( get_template_directory() . '/backend/customizer/content.php'			); 	# Content
-require_once( get_template_directory() . '/backend/customizer/documentation.php'	); 	# Documentation 
-require_once( get_template_directory() . '/backend/customizer/support.php'			); 	# Support 
+include( get_template_directory() . '/backend/customizer/appearance.php'		); 	# Colors
+include( get_template_directory() . '/backend/customizer/panels.php'			); 	# Panel Setup
+include( get_template_directory() . '/backend/customizer/content.php'			); 	# Content
+include( get_template_directory() . '/backend/customizer/documentation.php'		); 	# Documentation 
+include( get_template_directory() . '/backend/customizer/support.php'			); 	# Support 

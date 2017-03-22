@@ -1,43 +1,15 @@
 <?php get_header(); ?>
 
-<div id="content">
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<div id="post">
+		<?php get_template_part('loop'); ?>
 
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<?php endwhile; else: ?>
 
-			<div class="post">
+		<p>Sorry, no posts matched your criteria.</p>
 
-				<div class="post-date">
+	<?php endif; ?>
 
-					<?php if ( is_single() ) { echo '<a href="', the_permalink(), '">', the_time('j F Y'), '</a>'; }; ?>
-
-				</div><!-- .post-date -->
-
-				<div class="post-title">
-
-					<h2><?php the_title(); ?></h2> 
-
-				</div><!-- .post-title -->
-
-				<div class="post-content">
-
-					<?php the_content();?>
-
-				</div><!-- .post-content -->
-
-			</div><!-- /.post -->
-
-		<?php endwhile; else: ?>
-
-			<p>Sorry, no posts matched your criteria.</p>
-
-		<?php endif; ?>
-
-			<div id="return"><a href="<?php echo home_url(); ?>">&#8592; Home</a></div>
-
-	</div><!-- #post -->
-
-</div><!-- /#content -->
+	<?php include('frontend/inc/link-home.php') ?>
 
 <?php get_footer(); ?>

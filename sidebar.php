@@ -84,7 +84,7 @@
                               <div class="clear"></div>
                 
                               <div id="sidebar-credit">
-                                <p><a href="https://onepagetemplates.com/clutterless" target="_blank">Clutterless WordPress Theme</a> <span class="by">by</span> <a href="https://onepagelove.com" target="_blank">One Page Love</a></p>
+                                <p><a href="https://onepagelove.com/clutterless">Clutterless WordPress Theme</a> <span class="by">by</span> <a href="https://onepagelove.com">One Page Love</a></p>
                               </div><!-- #sidebar-credit -->
 
 

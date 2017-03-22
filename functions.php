@@ -11,13 +11,14 @@
 # Theme definitions
 # ------------------------------------------------------------------------
 
-define( 'clutterless_theme_version' , '1.8.4' );  		# Theme version
+define( 'clutterless_theme_version' , '1.8.5' );  		# Theme version
 if ( ! isset( $content_width ) ) $content_width = 600;  # Content Width
 
 # ------------------------------------------------------------------------
 # Theme incudes
 # ------------------------------------------------------------------------
 
+require_once( get_template_directory() . '/backend/functions/title.php'				); 	# WordPress Title Tag
 require_once( get_template_directory() . '/backend/functions/ajax-archives.php'		); 	# AJAX loading archives
 require_once( get_template_directory() . '/backend/functions/search-results.php'	); 	# Set number of archive & search results
 require_once( get_template_directory() . '/backend/functions/widgets.php'			); 	# Widgets

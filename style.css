@@ -1,13 +1,14 @@
 /*
 Theme Name: Clutterless
 Theme URI: https://onepagetemplates.com/clutterless
-Version: 1.8.4
+Version: 1.8.5
 Description: A Minimal Blogging WordPress Theme by One Page Love. Clutterless is a free minimal single-column WordPress theme absolutely perfect for distraction-free blogging.
 Author: One Page Love
 Author URI: https://onepagelove.com
 License: GNU General Public License
 License URI: license.txt
-Tags: one-column, fixed-width, left-sidebar, custom-colors, theme-options, custom-menu
+Text Domain: clutterless
+Tags: one-column, left-sidebar, custom-colors, theme-options, custom-menu
 */
 /* --- Reset --- */
 html { color: #000; }
@@ -101,12 +102,18 @@ del { text-decoration: line-through; }
 
 * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; -moz-font-feature-settings: "liga" on; margin: 0; }
 
+.sticky, .gallery-caption, .bypostauthor, .screen-reader-text { display: default; }
+
+.pagination { display: none; }
+
 video, iframe { width: 100%; }
 
 /* --- Fonts --- */
-body { font-family: "PT Serif", serif; }
+body { font-family: "Lora", Arial, sans-serif; font-weight: 400; }
 
-#content .post-title h2, #content .post-content h2, #content .post-content h3, #content .post-content h4, #sidebar-inner #sidebar-logo .logo-name h1, #sidebar-inner #sidebar-widgets .sidebar-widget-title, #search-page #search-header #search-term { font-family: "Roboto", Arial, sans-serif; }
+.post-title h2, .post-content h2, .post-content h3, .post-content h4, .logo-name h1, .sidebar-widget-title, #search-term { font-family: "Oswald", serif; font-weight: 600; }
+
+#pbd-alp-load-posts, #sidebar-name, .post-date, .return { font-family: "Oswald", serif; font-weight: 400; }
 
 /* --- Colors --- */
 /* browser background */
@@ -123,14 +130,11 @@ a:hover { color: #333; }
 /* Sidebar font and link color (same) */
 #sidebar, #sidebar a, #sidebar-inner #search #search-form #search-field { color: #FFF; }
 
-/* Blog seperator lines */
-#content .post { border-top: 1px solid #FFFFFF; box-shadow: 0 -1px 0 #DDDDDD; }
-
 /* Blog text color and shadow */
 #content { color: #666; text-shadow: 0 1px 0 #FFF; }
 
 /* Blog titles */
-#content .post-date, #content .post-date a, #return a { color: #999; }
+#content .post-date, #content .post-date a, .return a { color: #999; }
 
 #content .post-title h2, #content .post-title h2 a { color: #333; }
 
@@ -147,56 +151,49 @@ a:hover { color: #333; }
 
 /* Blockquote */
 /* --- Containers --- */
-#content { width: 600px; margin: 0 auto; padding: 0 0 75px 0; }
-
-#content { margin-top: 100px; }
-
-#content .post { padding: 60px 0 25px 0; margin: 0 0 0px 0; width: 600px; }
-
-#content .post-date { font-size: 11px; line-height: 11px; text-transform: uppercase; margin-bottom: 5px; font-weight: 300; letter-spacing: 0.5px; }
-
-#content .post-title { margin-bottom: 35px; }
-
-#content .post-title h2 { font-weight: 700; letter-spacing: -1.5px; font-size: 40px; line-height: 46px; text-tranform: uppercase; }
-
-#content .post-content { font-size: 19px; line-height: 29px; margin: 0; padding: 0; }
-
-#content .post-content p { font-size: 19px; line-height: 29px; margin: 0 0 35px 0; padding: 0; letter-spacing: 0px; }
-
-#content .post-content h2 { font-size: 28px; line-height: 32px; margin: 60px 0 30px 0; letter-spacing: -1px; }
-
-#content .post-content h3 { font-size: 24px; line-height: 28px; margin: 50px 0 20px 0; letter-spacing: -1px; }
-
-#content .post-content h4 { font-size: 20px; line-height: 24px; margin: 40px 0 10px 0; letter-spacing: -1px; }
-
-#content .post-content img { max-width: 580px; height: auto; padding: 10px; box-shadow: 0px 0px 5px 0px #EEE; }
-
-#content .post-content blockquote { opacity: 0.5; }
-
-#content .post-content .wp-caption { text-align: center; }
-
-#content .post-content p.wp-caption-text { opacity: 0.5; font-size: 16px; line-height: 18px; padding: 5px 0; }
-
-#content .post-content blockquote { letter-spacing: -0.1px; font-style: italic; padding: 0 0 0 20px; margin: 40px 0 40px 20px; border-left: 1px dotted #999; }
-
-#content .post-content strong { font-weight: bold; }
+#content { width: 600px; margin: 0 auto; padding: 0 0 75px 0; margin-top: 100px; }
 
 #content a { -webkit-transition-duration: 0.3s; transition-duration: 0.3s; }
 
 #content a:hover { -webkit-transition-duration: 0.1s; transition-duration: 0.1s; }
 
+#content .post { padding: 60px 0 25px 0; margin: 0 0 0px 0; width: 600px; border-top: 1px solid #FFFFFF; box-shadow: 0 -1px 0 #DDDDDD; }
+
+#content .post .post-date { font-size: 11px; line-height: 11px; text-transform: uppercase; margin-bottom: 5px; font-weight: 300; letter-spacing: 0.5px; }
+
+#content .post .post-title { margin-bottom: 35px; }
+
+#content .post .post-title h2 { margin-top: 0; font-weight: 700; letter-spacing: -1px; font-size: 40px; line-height: 46px; }
+
+#content .post .post-content { font-size: 19px; line-height: 29px; margin: 0; padding: 0; }
+
+#content .post p { font-size: 19px; line-height: 30px; margin: 0 0 35px 0; padding: 0; letter-spacing: 0px; }
+
+#content .post h2 { font-size: 28px; line-height: 32px; margin: 60px 0 30px 0; letter-spacing: -1px; }
+
+#content .post h3 { font-size: 24px; line-height: 28px; margin: 50px 0 20px 0; letter-spacing: -1px; }
+
+#content .post h4 { font-size: 20px; line-height: 24px; margin: 40px 0 10px 0; letter-spacing: -1px; }
+
+#content .post img { max-width: 580px; height: auto; padding: 10px; box-shadow: 0px 0px 5px 0px #EEE; }
+
+#content .post .wp-caption { text-align: center; }
+
+#content .post p.wp-caption-text { opacity: 0.5; font-size: 16px; line-height: 18px; padding: 5px 0; }
+
+#content .post blockquote { letter-spacing: -0.1px; font-style: italic; padding: 0 0 0 20px; margin: 40px 0 40px 20px; border-left: 1px dotted #999; }
+
 #pbd-alp-load-posts a:link, #pbd-alp-load-posts a:visited { display: block; width: 300px; margin: 0 auto 100px auto; text-align: center; padding: 10px 7px 14px 7px; border: none; background: #F5F5F5; font-size: 14px; line-height: 14px; color: #999; letter-spacing: 1px; text-decoration: none; text-transform: uppercase; border-top: 1px solid #FFF; border-bottom: 1px solid #E5e5e5; border-radius: 4px; }
 
 #pbd-alp-load-posts a:hover, #pbd-alp-load-posts a:active { background-color: #FFFFFF; color: #333; }
 
-#return { font-size: 12px; text-transform: uppercase; margin-bottom: 50px; }
+body.single #content .post { border-top: 0; box-shadow: 0 0 0; padding-top: 0; }
 
-#post-tags { display: none; }
+.return { font-size: 12px; text-transform: uppercase; margin-bottom: 50px; }
 
-/* unhide if you want tags */
 #search-page #search-header #search-term { letter-spacing: -2px; font-size: 32px; }
 
-#search-page #search { padding: 20px 0; border-top: 1px solid white; border-top: 1px solid rgba(255, 255, 255, 0.15); background-clip: padding-box; }
+#search-page #search { padding: 20px 0; border-top: 1px solid rgba(255, 255, 255, 0.15); background-clip: padding-box; }
 
 #search-page #search #search-form #search-field { border: none; background-color: #EEE; color: #111; height: 20px; width: 94%; padding: 4px 10px 6px 10px; font-size: 12px; }
 
@@ -207,6 +204,8 @@ a:hover { color: #333; }
 #search-page .archive-post .archive-date { font-size: 10px; line-height: 10px; text-transform: uppercase; font-weight: 300; letter-spacing: 0.5px; color: #999; }
 
 #search-page .archive-post .archive-title { font-size: 18px; line-height: 22px; margin: 0; }
+
+body.search-results #pbd-alp-load-posts { display: none; }
 
 /* --- Sidebar --- */
 #sidebar { z-index: 1000; text-shadow: none; position: fixed; top: 100px; left: 0; width: 20px; padding: 0 0 0 3px; text-align: center; -webkit-transition-duration: .3s; transition-duration: .3s; }

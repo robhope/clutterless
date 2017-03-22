@@ -17,8 +17,6 @@
 
 	<meta charset="<?php bloginfo('charset'); ?>" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-	<title><?php bloginfo('name'); ?></title>
 	
 	<!-- Responsive stylesheet -->
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -35,7 +33,9 @@
 
 <body <?php body_class(); ?> >
 
-  <?php get_sidebar(); ?>
+<?php get_sidebar(); ?>
 
-  <div id="ipad-click"><div id="content">
+<div id="ipad-click">
+
+	<div id="content">
 	
