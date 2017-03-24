@@ -11,7 +11,7 @@
 # Theme definitions
 # ------------------------------------------------------------------------
 
-define( 'clutterless_theme_version' , '1.8.6' );  		# Theme version
+define( 'clutterless_theme_version' , '1.8.7' );  		# Theme version
 if ( ! isset( $content_width ) ) $content_width = 600;  # Content Width
 
 # ------------------------------------------------------------------------
