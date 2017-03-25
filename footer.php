@@ -1,4 +1,13 @@
-
+<?php
+/**
+ * The template for displaying the footer
+ *
+ * @package clutterless
+ * @since clutterless 2.0.0
+ * @license CC BY 3.0
+ *
+ */
+?>
  	</div><!-- #content --> 
 
 </div><!-- #ipad-click --> 

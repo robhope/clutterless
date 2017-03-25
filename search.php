@@ -1,4 +1,13 @@
-<?php get_header(); global $paged; ?>
+<?php
+/**
+ * The template for displaying search results pages
+ *
+ * @package clutterless
+ * @since clutterless 2.0.0
+ * @license CC BY 3.0
+ *
+ */
+get_header(); global $paged; ?>
 
 	<div id="search-page">
 
@@ -6,7 +15,7 @@
 
 			<div id="search-term">
 
-				<?php printf( __( '%d %s' ), $wp_query->found_posts, _n( 'search result', 'search results', $wp_query->found_posts), get_search_query() ); ?> for <?php echo ' &quot;'.esc_html($s).'&quot;'; ?>
+				<?php printf( __( '%d %s', 'clutterless' ), $wp_query->found_posts, _n( 'search result', 'search results', 'clutterless', $wp_query->found_posts), get_search_query() ); ?> for <?php echo ' &quot;'.esc_html($s).'&quot;'; ?>
 
 			</div><!-- #search-term -->    
 
@@ -14,7 +23,7 @@
 
 				<form id="search-form"  action="<?php print get_site_url(); ?>/" method="get">
 
-					<input type="text" id="search-field" name="s" value="<?php  if (is_search()) {esc_attr_e($s);} else {echo ('Search');} ?>" onFocus="this.value=''" />
+					<input type="text" id="search-field" name="s" placeholder="Search..." />
 
 					<input type="submit" id="search-button" value="" />
 
@@ -28,13 +37,13 @@
 
 		<div id="search-results">
 
-			<?php get_template_part('loop-search'); ?>  
+			<?php get_template_part( 'template-parts/content', 'search' ); ?>  
 
 			<div class="clear"></div>    
 
 		</div><!-- #search-results -->
 
-		<?php include('frontend/inc/link-home.php') ?>
+		<?php get_template_part( 'template-parts/link', 'home' ); ?> 
 
 	</div><!-- #search-page -->
 

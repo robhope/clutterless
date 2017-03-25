@@ -2,14 +2,14 @@
 /**
  *
  * @package clutterless
- * @since clutterless 1.8
+ * @since clutterless 2.0.0
  * @license CC BY 3.0
  * 
  */
 
-// -------------------------------------------------------------
-// Set number of archive & search results
-// -------------------------------------------------------------
+#-------------------------------------------------------------
+# Set number of archive & search results
+#-------------------------------------------------------------
 
 add_filter('pre_get_posts', 'clutterless_change_wp_search_size'); // Hook our custom function onto the request filter
 function clutterless_change_wp_search_size($query) {

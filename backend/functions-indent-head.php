@@ -2,14 +2,14 @@
 /**
  *
  * @package clutterless
- * @since clutterless 1.8
+ * @since clutterless 2.0.0
  * @license CC BY 3.0
  * 
  */
 
-// -------------------------------------------------------------
-// Ultra geeky wp_head indentation
-// -------------------------------------------------------------
+#-------------------------------------------------------------
+# Ultra geeky wp_head indentation
+#-------------------------------------------------------------
 
 function indented_wp_head(){
     ob_start();

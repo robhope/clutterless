@@ -2,15 +2,13 @@
 /**
  *
  * @package clutterless
- * @since clutterless 1.8.8
+ * @since clutterless 2.0.0
  * @license CC BY 3.0
  * 
  */
 
 #-------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------
-# Add, Move and Remove Sections within Theme Customizer
-#-------------------------------------------------------------------------------
+# Customizer: Add, move and remove Sections
 #-------------------------------------------------------------------------------
 
 function clutterless_customizer_sections ( $wp_customize ) {
@@ -44,7 +42,7 @@ function clutterless_customizer_sections ( $wp_customize ) {
 	    'title'       => 'Content',
 	    'priority'    => 500,
 	    'capability'  => 'edit_theme_options',
-	    'description' => 'All the wise words',
+	    'description' => 'All the wise words...',
 	    'panel'       => 'clutterless_panel_setup',
 	  )
 	);
@@ -56,10 +54,10 @@ function clutterless_customizer_sections ( $wp_customize ) {
 	$wp_customize->add_section( 
 	  'clutterless_customizer_setup_appearance_option', 
 	  array(
-	    'title'       => 'Appearance',
+	    'title'       => 'Colors',
 	    'priority'    => 600,
 	    'capability'  => 'edit_theme_options',
-	    'description' => 'All the pretty colors',
+	    'description' => 'All the pretty colors...',
 	    'panel'       => 'clutterless_panel_setup',
 	  )
 	);
@@ -77,7 +75,7 @@ function clutterless_customizer_sections ( $wp_customize ) {
 	    'description' => '<ul>
 	    <li><b>Video:</b> <a href="#"> Setup Walkthough</a></li>
 	    <li><b>Example:</b> <a href="#" target="_blank">Clutterless Demo</a></li>
-	    <li><b>Help?</b> <a href="/wp-admin/customize.php?autofocus[section]=clutterless_customizer_setup_support_option">Clutterless Pro</a> theme owners receive priority email support and additional features 🎉</li>
+	    <li><b>Help?</b> <a href="/wp-admin/customize.php?autofocus[section]=clutterless_customizer_setup_support_option">Clutterless Pro</a> theme owners receive priority email support and additional features.</li>
 	    </ul>',
 	    'panel'       => 'clutterless_panel_setup',
 	  )

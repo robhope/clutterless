@@ -2,15 +2,13 @@
 /**
  *
  * @package clutterless
- * @since clutterless 1.8.8
+ * @since clutterless 2.0.0
  * @license CC BY 3.0
  * 
  */
 
 #-------------------------------------------------------------------------------
-#-------------------------------------------------------------------------------
-# Add and remove panels within the Theme Customizer
-#-------------------------------------------------------------------------------
+# Customizer: Add and remove Panels 
 #-------------------------------------------------------------------------------
 
 function clutterless_customizer_panels ( $wp_customize ) {

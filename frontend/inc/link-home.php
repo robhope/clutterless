@@ -1,1 +1,0 @@
-<div class="return"><a href="<?php echo home_url(); ?>">&#8592; Home</a></div>

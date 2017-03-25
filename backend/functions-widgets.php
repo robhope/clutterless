@@ -2,14 +2,14 @@
 /**
  *
  * @package clutterless
- * @since clutterless 1.8
+ * @since clutterless 2.0.0
  * @license CC BY 3.0
  * 
  */
 
- // -------------------------------------------------------------
- // Enable Widgets
- // -------------------------------------------------------------
+#-------------------------------------------------------------
+# Enable Widgets
+#-------------------------------------------------------------
 
 add_action('widgets_init', 'clutterless_register_sidebars');
 function clutterless_register_sidebars(){

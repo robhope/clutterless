@@ -4,37 +4,226 @@
 // Sidebar
 //-------------------------------------------------------------------------------
 
-#sidebar {z-index: 1000; text-shadow: none;  position:fixed;top:100px;left:0;width:20px;padding:0 0 0 3px;text-align:center;-webkit-transition-duration:.3s;-moz-transition-duration:.3s;-o-transition-duration:.3s;transition-duration:.3s;}
-#sidebar-name {left: 0; white-space: nowrap; text-transform: uppercase; font-size: 11px;  letter-spacing: 1px;
-  -webkit-transform: rotate(90deg);-moz-transform: rotate(90deg);-ms-transform: rotate(90deg);-o-transform: rotate(90deg);filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);}
-#sidebar-name .sidebar-name-wrap { padding: 5px 10px 19px 10px; -webkit-border-radius: 5px 0 5px 0;-moz-border-radius: 5px 0 5px 0;border-radius: 5px 5px 0 0; font-size: 12px;}
-#sidebar-inner {position:fixed;top:0;left:-450px;width:350px;padding:0 50px;height:100%;-webkit-transition-duration:.3s;-moz-transition-duration:.3s;-o-transition-duration:.3s;transition-duration:.3s;text-align:left;	}
-#sidebar:hover {left: 450px;}
-#sidebar:hover #sidebar-inner {left: 0;}
-#sidebar-inner {}
-#sidebar-inner #sidebar-logo .logo {margin: 100px 0 30px 0;}
-#sidebar-inner #sidebar-logo .logo-image {float: left;}
-#sidebar-inner #sidebar-logo .logo-name {float: left; display: block; width: 250px; text-transform: uppercase; margin: 8px 0 0 10px; }
-#sidebar-inner #sidebar-logo .logo-name h1 {letter-spacing: -0.25px; font-size: 24px; font-weight: 700; line-height: 24px;  margin: 0 !important; padding: 0 !important; }
-#sidebar-inner #sidebar-logo .tagline {float: left; display: block; font-size: 12px; line-height: 12px; margin: 0 0 0 10px;}
-#sidebar-inner #sidebar-bio { margin-bottom: 25px; font-size: 14px; line-height: 18px; padding-top: 20px;  border-top: 1px solid rgb(255, 255, 255); border-top: 1px solid rgba(255, 255, 255, .15);-webkit-background-clip: padding-box;   background-clip: padding-box;}
-#sidebar-inner #sidebar-widgets {padding-top: 30px; border-top: 1px solid rgb(255, 255, 255); border-top: 1px solid rgba(255, 255, 255, .15);-webkit-background-clip: padding-box;   background-clip: padding-box;}
-#sidebar-inner #sidebar-widgets  .sidebar-widget {display: inline-block; width: 150px; vertical-align: top; margin-bottom: 20px;}
-#sidebar-inner #sidebar-widgets  .sidebar-widget-title {display: block; margin: 0 0 8px 0; padding: 0; text-transform: uppercase; font-size: 12px; line-height: 12px; }
-#sidebar-inner #sidebar-widgets  .sidebar-widget ul { margin: 0; padding: 0; vertical-align: top; }
-#sidebar-inner #sidebar-widgets  .sidebar-widget ul li {list-style: none;font-size: 12px; line-height: 14px; margin: 0 0 8px 0; padding: 0; }
-#sidebar-inner #sidebar-widgets  .sidebar-widget ul li a {}
-#sidebar-inner #sidebar-widgets  .sidebar-widget ul li a:hover {}
-#sidebar-inner #sidebar-credit {padding-top: 20px; font-size: 12px; border-top: 1px solid rgb(255, 255, 255); border-top: 1px solid rgba(255, 255, 255, .15);-webkit-background-clip: padding-box;   background-clip: padding-box; }
-#sidebar-inner #sidebar-credit .by {}
-#sidebar-inner #sidebar-credit a {}
-#sidebar-inner #sidebar-credit a:hover {}
+#sidebar {
+	z-index: 1000; 
+	text-shadow: none;  
+	position:fixed;
+	top:100px;
+	left:0;
+	width:20px;
+	padding:0 0 0 3px;
+	text-align:center;
+	transition-duration:.3s;
+}
 
-#sidebar-inner #search {padding: 20px 0; border-top: 1px solid rgb(255, 255, 255); border-top: 1px solid rgba(255, 255, 255, .15);-webkit-background-clip: padding-box;   background-clip: padding-box;}
-#sidebar-inner #search #search-form {}
-#sidebar-inner #search #search-form #search-field {border: none; background-color:  rgba(255, 255, 255, .15); height: 20px; width: 94%; padding: 4px 10px 6px 10px; font-size: 12px}
-#sidebar-inner #search #search-form #search-button {display: none;}
+	//-------------------------------------------------------------------------------
+	// The 90 degree name
+	//-------------------------------------------------------------------------------
 
-// Hide Dropdown on Mobile 
-#sidebar #sidebar-dropdown {display: none; margin-top: -7px;} 
+	#sidebar-name {
+		left: 0; 
+		white-space: nowrap; 
+		text-transform: uppercase; 
+		font-size: 11px;  
+		letter-spacing: 1px;
+	    -webkit-transform: rotate(90deg);
+	    -moz-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	    -o-transform: rotate(90deg);
+	    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+		.sidebar-name-wrap { 
+			padding: 5px 10px 19px 10px; 
+			border-radius: 5px 5px 0 0; 
+			font-size: 12px;
+		}
+
+	}
+
+	//-------------------------------------------------------------------------------
+	// The content within the sidebar
+	//-------------------------------------------------------------------------------
+
+	#sidebar-inner {
+		position:fixed;
+		top:0;
+		left:-450px;
+		width:350px;
+		padding:0 50px;
+		height:100%;
+		transition-duration:.3s;
+		text-align:left;	
+	}
+
+	//-------------------------------------------------------------------------------
+	// The mouse over magic
+	//-------------------------------------------------------------------------------
+
+	#sidebar:hover {
+		left: 450px;
+	}
+	#sidebar:hover #sidebar-inner {
+		left: 0;
+	}
+
+	//-------------------------------------------------------------------------------
+	// Logo
+	//-------------------------------------------------------------------------------
+
+	#sidebar-logo {
+
+		.logo {
+			margin: 100px 0 30px 0;
+		}
+
+		.logo-image {
+			float: left;
+			display: block; 
+			width: 50px;
+			height: 50px;
+			margin-right: 10px;
+
+			img {
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+			}
+
+		}
+
+		.logo-name {
+			float: left; 
+			display: block; 
+			width: 250px; 
+			margin: 8px 0 2px 0; 
+
+			h1 {
+				letter-spacing: -0.25px; 
+				font-size: 24px; 
+				font-weight: 600; 
+				line-height: 24px;  
+				margin: 0 !important; 
+				padding: 0 !important; 
+			}
+		}
+
+		.tagline {
+			float: left; 
+			display: block; 
+			font-size: 12px; 
+			line-height: 12px; 
+			margin: 0 0 0 0;
+		}
+
+	}
+
+	//-------------------------------------------------------------------------------
+	// About / Bio
+	//-------------------------------------------------------------------------------
+
+	#sidebar-bio { 
+		margin-bottom: 25px; 
+		font-size: 14px; 
+		line-height: 18px; 
+		padding-top: 20px;  
+		border-top: 1px solid rgb(255, 255, 255); 
+		border-top: 1px solid rgba(255, 255, 255, .15);
+		-webkit-background-clip: padding-box;   
+		background-clip: padding-box;
+	}
+
+	//-------------------------------------------------------------------------------
+	// Widgets
+	//-------------------------------------------------------------------------------
+
+	#sidebar-widgets {
+		padding-top: 30px; 
+		border-top: 1px solid rgb(255, 255, 255); 
+		border-top: 1px solid rgba(255, 255, 255, .15);
+		-webkit-background-clip: padding-box;   
+		background-clip: padding-box;
+
+		.sidebar-widget {
+			display: inline-block; 
+			width: 150px; 
+			vertical-align: top; 
+			margin-bottom: 20px;
+
+			ul { 
+				margin: 0; 
+				padding: 0; 
+				vertical-align: top; 
+
+				li {
+					list-style: none;
+					font-size: 12px; 
+					line-height: 14px; 
+					margin: 0 0 8px 0; 
+					padding: 0; 
+				}
+			}
+		}
+
+		.sidebar-widget-title {
+			display: block; 
+			margin: 0 0 8px 0; 
+			padding: 0; 
+			text-transform: uppercase; 
+			font-size: 12px; 
+			line-height: 12px; 
+
+		}
+
+	}
+
+	//-------------------------------------------------------------------------------
+	// Credit - please upgrade to Pro to remove this
+	// https://onepagelove.com/clutterless
+	// It really means a lot to me! 
+	// Cheers, Rob
+	//-------------------------------------------------------------------------------
+
+	#sidebar-credit {
+		padding-top: 20px; 
+		font-size: 12px; 
+		border-top: 1px solid rgb(255, 255, 255); 
+		border-top: 1px solid rgba(255, 255, 255, .15);
+		-webkit-background-clip: padding-box;   
+		background-clip: padding-box; 
+	}
+
+	//-------------------------------------------------------------------------------
+	// Search
+	//-------------------------------------------------------------------------------
+
+	#search {
+		padding: 20px 0; 
+		border-top: 1px solid rgb(255, 255, 255); 
+		border-top: 1px solid rgba(255, 255, 255, .15);
+		-webkit-background-clip: padding-box;   
+		background-clip: padding-box;
+	}
+	#search-form {
+
+	}
+	#search-field {
+		border: none; 
+		background-color:  rgba(255, 255, 255, .15); 
+		height: 20px; 
+		width: 94%; 
+		padding: 4px 10px 6px 10px; 
+		font-size: 12px;
+	}
+	#search-button {
+		display: none;
+	}
+
+	//-------------------------------------------------------------------------------
+	// Hide Dropdown on Mobile on default when on standard view
+	//-------------------------------------------------------------------------------
+
+	#sidebar #sidebar-dropdown {
+		display: none; 
+		margin-top: -7px;
+	} 
 

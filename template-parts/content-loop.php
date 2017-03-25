@@ -1,8 +1,18 @@
+<?php
+/**
+ *
+ * @package clutterless
+ * @since clutterless 2.0.0
+ * @license CC BY 3.0
+ * 
+ */
+?>
+
 <div class="post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="post-date">
 
-		<a href="<?php the_permalink(); ?>"><?php echo the_time(get_option('date_format')) ?></a>
+		<a href="<?php the_permalink(); ?>"><?php echo the_time(get_option('date_format')); ?></a>
 
 	</div><!-- .post-date -->
 

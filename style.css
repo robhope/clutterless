@@ -1,12 +1,12 @@
 /*
 Theme Name: Clutterless
-Theme URI: https://onepagelove.com/clutterless
-Version: 1.9.0
-Description: A Minimal Blogging WordPress Theme by One Page Love. Clutterless is a free single-column WordPress theme absolutely perfect for distraction-free blogging.
 Author: One Page Love
 Author URI: https://onepagelove.com
+Theme URI: https://onepagelove.com/clutterless
+Description: A Minimal Blogging WordPress Theme by One Page Love. Clutterless is a free single-column WordPress theme absolutely perfect for distraction-free blogging.
+Version: 2.0.0
 License: Creative Commons Attribution 3.0 License
-License URI: license.txt
+License URI: https://creativecommons.org/licenses/by/3.0/
 Text Domain: clutterless
 Tags: one-column, left-sidebar, custom-colors, theme-options, custom-menu
 */
@@ -107,47 +107,41 @@ del { text-decoration: line-through; }
 video, iframe { width: 100%; }
 
 /* --- Fonts --- */
-body { font-family: "Lora", Arial, sans-serif; font-weight: 400; }
+body { font-family: "Lora", Georgia, sans-serif; font-weight: 400; }
 
-.post-title h2, .post-content h2, .post-content h3, .post-content h4, .logo-name h1, .sidebar-widget-title, #search-term { font-family: "Oswald", serif; font-weight: 600; }
+.post-title h2, .post-content h2, .post-content h3, .post-content h4, .logo-name h1, .sidebar-widget-title, #search-term { font-family: "Oswald", Arial, serif; font-weight: 600; }
 
-#pbd-alp-load-posts, #sidebar-name, .post-date, .return { font-family: "Oswald", serif; font-weight: 400; }
+#pbd-alp-load-posts, #sidebar-name, .post-date, .return { font-family: "Oswald", Arial, serif; font-weight: 400; }
 
 /* --- Colors --- */
-/* browser background */
 body { background: #F8F8F8; }
 
-/* Links Default */
 a { color: #333; }
 
 a:hover { color: #333; }
 
-/* Sidebar background */
 #sidebar-name .sidebar-name-wrap, #sidebar-inner { background: #18bceb; }
 
-/* Sidebar font and link color (same) */
-#sidebar, #sidebar a, #sidebar-inner #search #search-form #search-field { color: #FFF; }
+#sidebar, #sidebar a, #search, #search-field::-webkit-input-placeholder { color: #FFF; }
 
-/* Blog text color and shadow */
-#content { color: #666; text-shadow: 0 1px 0 #FFF; }
+#sidebar, #sidebar a, #search, #search-field::-moz-placeholder { color: #FFF; }
 
-/* Blog titles */
+#sidebar, #sidebar a, #search, #search-field:-ms-input-placeholder { color: #FFF; }
+
+#sidebar, #sidebar a, #search, #search-field::placeholder { color: #FFF; }
+
 #content .post-date, #content .post-date a, .return a { color: #999; }
 
 #content .post-title h2, #content .post-title h2 a { color: #333; }
 
-/* Blog links */
 #content .post-content a { color: #333; border-bottom: 1px dotted #333; }
 
 #content .post-content a:hover { color: #18bceb; border-bottom: 1px dotted #18bceb; }
 
-/* Blog headings & Bold */
 #content .post-content h2, #content .post-content h3, #content .post-content h4 { color: #444; }
 
-/* Blog image borders */
 #content .post-content img { background: #FFF; }
 
-/* Blockquote */
 /* --- Containers --- */
 #content { width: 600px; margin: 0 auto; padding: 0 0 75px 0; margin-top: 100px; }
 
@@ -161,7 +155,7 @@ a:hover { color: #333; }
 
 #content .post .post-title { margin-bottom: 35px; }
 
-#content .post .post-title h2 { margin-top: 0; font-weight: 700; letter-spacing: -1px; font-size: 40px; line-height: 46px; }
+#content .post .post-title h2 { margin-top: 0; font-weight: 600; letter-spacing: -1px; font-size: 40px; line-height: 46px; }
 
 #content .post .post-content { font-size: 19px; line-height: 29px; margin: 0; padding: 0; }
 
@@ -218,41 +212,41 @@ body.search-results #pbd-alp-load-posts { display: none; }
 
 #sidebar:hover #sidebar-inner { left: 0; }
 
-#sidebar-inner #sidebar-logo .logo { margin: 100px 0 30px 0; }
+#sidebar-logo .logo { margin: 100px 0 30px 0; }
 
-#sidebar-inner #sidebar-logo .logo-image { float: left; }
+#sidebar-logo .logo-image { float: left; display: block; width: 50px; height: 50px; margin-right: 10px; }
 
-#sidebar-inner #sidebar-logo .logo-name { float: left; display: block; width: 250px; text-transform: uppercase; margin: 8px 0 0 10px; }
+#sidebar-logo .logo-image img { width: 50px; height: 50px; border-radius: 50%; }
 
-#sidebar-inner #sidebar-logo .logo-name h1 { letter-spacing: -0.25px; font-size: 24px; font-weight: 700; line-height: 24px; margin: 0 !important; padding: 0 !important; }
+#sidebar-logo .logo-name { float: left; display: block; width: 250px; margin: 8px 0 2px 0; }
 
-#sidebar-inner #sidebar-logo .tagline { float: left; display: block; font-size: 12px; line-height: 12px; margin: 0 0 0 10px; }
+#sidebar-logo .logo-name h1 { letter-spacing: -0.25px; font-size: 24px; font-weight: 600; line-height: 24px; margin: 0 !important; padding: 0 !important; }
 
-#sidebar-inner #sidebar-bio { margin-bottom: 25px; font-size: 14px; line-height: 18px; padding-top: 20px; border-top: 1px solid white; border-top: 1px solid rgba(255, 255, 255, 0.15); background-clip: padding-box; }
+#sidebar-logo .tagline { float: left; display: block; font-size: 12px; line-height: 12px; margin: 0 0 0 0; }
 
-#sidebar-inner #sidebar-widgets { padding-top: 30px; border-top: 1px solid white; border-top: 1px solid rgba(255, 255, 255, 0.15); background-clip: padding-box; }
+#sidebar-bio { margin-bottom: 25px; font-size: 14px; line-height: 18px; padding-top: 20px; border-top: 1px solid white; border-top: 1px solid rgba(255, 255, 255, 0.15); background-clip: padding-box; }
 
-#sidebar-inner #sidebar-widgets .sidebar-widget { display: inline-block; width: 150px; vertical-align: top; margin-bottom: 20px; }
+#sidebar-widgets { padding-top: 30px; border-top: 1px solid white; border-top: 1px solid rgba(255, 255, 255, 0.15); background-clip: padding-box; }
 
-#sidebar-inner #sidebar-widgets .sidebar-widget-title { display: block; margin: 0 0 8px 0; padding: 0; text-transform: uppercase; font-size: 12px; line-height: 12px; }
+#sidebar-widgets .sidebar-widget { display: inline-block; width: 150px; vertical-align: top; margin-bottom: 20px; }
 
-#sidebar-inner #sidebar-widgets .sidebar-widget ul { margin: 0; padding: 0; vertical-align: top; }
+#sidebar-widgets .sidebar-widget ul { margin: 0; padding: 0; vertical-align: top; }
 
-#sidebar-inner #sidebar-widgets .sidebar-widget ul li { list-style: none; font-size: 12px; line-height: 14px; margin: 0 0 8px 0; padding: 0; }
+#sidebar-widgets .sidebar-widget ul li { list-style: none; font-size: 12px; line-height: 14px; margin: 0 0 8px 0; padding: 0; }
 
-#sidebar-inner #sidebar-credit { padding-top: 20px; font-size: 12px; border-top: 1px solid white; border-top: 1px solid rgba(255, 255, 255, 0.15); background-clip: padding-box; }
+#sidebar-widgets .sidebar-widget-title { display: block; margin: 0 0 8px 0; padding: 0; text-transform: uppercase; font-size: 12px; line-height: 12px; }
 
-#sidebar-inner #search { padding: 20px 0; border-top: 1px solid white; border-top: 1px solid rgba(255, 255, 255, 0.15); background-clip: padding-box; }
+#sidebar-credit { padding-top: 20px; font-size: 12px; border-top: 1px solid white; border-top: 1px solid rgba(255, 255, 255, 0.15); background-clip: padding-box; }
 
-#sidebar-inner #search #search-form #search-field { border: none; background-color: rgba(255, 255, 255, 0.15); height: 20px; width: 94%; padding: 4px 10px 6px 10px; font-size: 12px; }
+#search { padding: 20px 0; border-top: 1px solid white; border-top: 1px solid rgba(255, 255, 255, 0.15); background-clip: padding-box; }
 
-#sidebar-inner #search #search-form #search-button { display: none; }
+#search-field { border: none; background-color: rgba(255, 255, 255, 0.15); height: 20px; width: 94%; padding: 4px 10px 6px 10px; font-size: 12px; }
+
+#search-button { display: none; }
 
 #sidebar #sidebar-dropdown { display: none; margin-top: -7px; }
 
-@media screen and (max-width: 720px) { /* Containers */
-  #content { width: auto; max-width: 90%; padding-top: 0; margin-top: 0; }
-  /* Sidebar */
+@media screen and (max-width: 720px) { #content { width: auto; max-width: 90%; padding-top: 0; margin-top: 0; }
   #sidebar-name { display: none; }
   #sidebar { float: auto; display: block; position: relative; height: auto; top: 0; width: auto !important; left: 0px !important; padding: 0 !important; margin: 0 !important; }
   #sidebar-inner { float: auto; display: block; top: 0; left: 0px !important; position: relative; padding: 2% 5%; width: auto; }
@@ -262,15 +256,12 @@ body.search-results #pbd-alp-load-posts { display: none; }
   #sidebar-inner #sidebar-logo .logo-name { width: 74%; }
   #sidebar-inner #sidebar-logo .tagline { width: auto; }
   #sidebar-inner #sidebar-bio { width: auto; }
-  /* Dropdown */
   #sidebar-inner #sidebar-logo { float: left; }
   #sidebar #sidebar-dropdown { display: block; float: right; padding-top: 1%; }
   #sidebar #sidebar-dropdown a { font-size: 58px; line-height: 58px; opacity: 0.6; }
   #sidebar #sidebar-dropdown a:hover, #sidebar #sidebar-dropdown a:active { opacity: 1; }
   #sidebar-mobile-info { display: none; }
-  /* AJAX Load button */
   #pbd-alp-load-posts a:link, #pbd-alp-load-posts a:visited { width: 200px; }
-  /* Posts */
   #content .post { max-width: 100%; padding: 40px 0 15px 0; }
   #content .post-title h2 { letter-spacing: -2px; font-size: 30px; line-height: 35px; }
   #content .post-title { margin-bottom: 25px; }
@@ -282,6 +273,4 @@ body.search-results #pbd-alp-load-posts { display: none; }
   #content .post-content blockquote { margin: 30px 0 30px 20px; }
   #content .post-content img { max-width: 94%; }
   #content .post-content .wp-caption { max-width: 94%; }
-  /* Search */
-  #search-page #search-header #search-term { margin-top: 30px; line-height: 40px; }
-  /* End of Media Query */ }
+  #search-page #search-header #search-term { margin-top: 30px; line-height: 40px; } }

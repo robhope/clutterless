@@ -2,14 +2,14 @@
 /**
  *
  * @package clutterless
- * @since clutterless 1.8.4
+ * @since clutterless 2.0.0
  * @license CC BY 3.0
  * 
  */
 
-// -------------------------------------------------------------
-// Enqueue Styles
-// -------------------------------------------------------------
+#-------------------------------------------------------------
+# Enqueue Styles
+#-------------------------------------------------------------
 
 function clutterless_enqueue_styles() {
 
@@ -25,10 +25,9 @@ function clutterless_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts' , 'clutterless_enqueue_styles' );
 
-
-// -------------------------------------------------------------
-// Enqueue Scripts 
-// -------------------------------------------------------------
+#-------------------------------------------------------------
+# Enqueue Scripts 
+#-------------------------------------------------------------
 
 # False = Header
 # True = Footer
@@ -42,4 +41,3 @@ function clutterless_enqueue_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts' , 'clutterless_enqueue_scripts'   );
-

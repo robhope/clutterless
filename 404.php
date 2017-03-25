@@ -1,4 +1,13 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying 404 pages (not found)
+ *
+ * @package clutterless
+ * @since clutterless 2.0.0
+ * @license CC BY 3.0
+ *
+ */
+get_header(); ?>
 
 	<div class="post">
 
@@ -22,6 +31,6 @@
 
 	</div><!-- /.post -->
 
-	<?php include('frontend/inc/link-home.php') ?>
+	<?php get_template_part( 'template-parts/link', 'home' ); ?> 
 
 <?php get_footer(); ?>

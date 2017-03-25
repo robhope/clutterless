@@ -2,10 +2,14 @@
 /**
  *
  * @package clutterless
- * @since clutterless 1.8.8
+ * @since clutterless 2.0.0
  * @license CC BY 3.0
  * 
  */
+
+#-------------------------------------------------------------------------------
+# Customizer: Documentation
+#-------------------------------------------------------------------------------
 
 function clutterless_customizer_setup_documentation ( $wp_customize ) {
 

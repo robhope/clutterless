@@ -1,16 +1,14 @@
-
-
 // ----------------------------------------------------------------------------------------------------- */
 // Clutterless WordPress Theme Tablet & Mobile Device Styles */
 // ----------------------------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: $bp-tablet) {
 
-/* Containers */
+// Containers 
 body {}    
 #content {width: auto; max-width: 90%; padding-top: 0; margin-top: 0; }  
 
-/* Sidebar */  
+// Sidebar 
 #sidebar-name {display: none;}
 #sidebar {float: auto;display: block;position: relative; height: auto; top: 0;  width: auto !important; left: 0px !important; padding: 0 !important; margin: 0 !important;}
 #sidebar-inner {float: auto; display: block; top: 0; left: 0px !important;   position: relative; padding: 2% 5%; width: auto; }
@@ -21,17 +19,17 @@ body {}
 #sidebar-inner #sidebar-logo .tagline {width: auto;}
 #sidebar-inner #sidebar-bio {width: auto;}
 
-/* Dropdown */  
+// Dropdown 
 #sidebar-inner #sidebar-logo {float: left; }  
 #sidebar #sidebar-dropdown {display: block; float: right; padding-top: 1%;}   
 #sidebar #sidebar-dropdown a {font-size: 58px; line-height:58px; opacity: 0.6;}
 #sidebar #sidebar-dropdown a:hover, #sidebar #sidebar-dropdown a:active {opacity: 1;}
 #sidebar-mobile-info {display: none;}
   
-/* AJAX Load button */  
+// AJAX Load button 
 #pbd-alp-load-posts a:link, #pbd-alp-load-posts a:visited  {width: 200px;}
   
-/* Posts */  
+// Posts 
 #content  .post {max-width: 100%;padding: 40px 0 15px 0;}
 #content  .post-title h2 {letter-spacing: -2px; font-size: 30px; line-height: 35px; }
 #content  .post-title {margin-bottom: 25px;}
@@ -44,10 +42,9 @@ body {}
 #content  .post-content img {max-width: 94%;}
 #content  .post-content .wp-caption {max-width: 94%;}  
 
-/* Search */    
+// Search   
 #search-page #search-header #search-term {margin-top: 30px; line-height: 40px;}
   
-/* End of Media Query */
 }
 
 

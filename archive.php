@@ -1,4 +1,14 @@
-<?php get_header(); global $paged; ?>
+<?php
+/**
+ * The template for displaying archives
+ *
+ * @package clutterless
+ * @since clutterless 2.0.0
+ * @license CC BY 3.0
+ *
+ */
+
+get_header(); global $paged; ?>
 
 <div id="search-page">
 
@@ -31,7 +41,7 @@
 
 	</div><!-- /.post -->
 
-	<?php include('frontend/inc/link-home.php') ?>
+	<?php get_template_part( 'template-parts/link', 'home' ); ?> 
 
 </div><!-- /#search-page -->   
 
