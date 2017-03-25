@@ -4,8 +4,8 @@ Thank you for downloading the 'Clutterless' WordPress Theme!
 
 ## Useful links and info:
 - [Theme Page](https://onepagelove.com/clutterless) (features and screenshot)
-- [Direct Download Links](#)
-- [Demo]()
+- [Direct Download Link](https://onepagelove.com/go/download-clutterless)
+- [Demo](https://demo.onepagelove.com/clutterless)
 - HTML Version (coming soon)
 - PSD Tempate (coming soon)
 
@@ -18,8 +18,8 @@ Thank you for downloading the 'Clutterless' WordPress Theme!
 - You can also change whatever you want but you need to keep the attribution (sidebar credit link) to One Page Love.
 - To go attribution-free and remove the link to One Page Love, simply upgrade to Pro below:
 
-## Clutterless Pro 🎉
-- [Go Pro](https://onepagelove.com/clutterless) for only $9.
+## Clutterless Pro 🎉  (coming soon)
+- [Go Pro](#) for only $9. 
 - The upgrade comes in a form of a WordPress Plugin that allows the removal of the One Page Love credit, unlocks more features and get prioity email support.
 - Simply install the Pro Plugin, hit activate and all the magic happens.
 
@@ -44,7 +44,7 @@ Thank you for downloading the 'Clutterless' WordPress Theme!
 
 ## Credits
 - [Lora](https://fonts.google.com/specimen/Lora) (Body) and [Oswald](https://fonts.google.com/specimen/Oswald) (Heading) Google Fonts used
-- Demi images all from [Unsplash](https://unsplash.com)
+- Demo images all from [Unsplash](https://unsplash.com)
 
 ## Changelog
 - [Major Releases](https://github.com/robhope/clutterless/releases)

@@ -2,7 +2,7 @@
 /**
  *
  * @package clutterless
- * @since clutterless 2.0.0
+ * @since clutterless 2.0.1
  * @license CC BY 3.0
  * 
  */
@@ -73,8 +73,8 @@ function clutterless_customizer_sections ( $wp_customize ) {
 	    'priority'    => 800,
 	    'capability'  => 'edit_theme_options',
 	    'description' => '<ul>
-	    <li><b>Video:</b> <a href="#"> Setup Walkthough</a></li>
-	    <li><b>Example:</b> <a href="#" target="_blank">Clutterless Demo</a></li>
+	    <li><b>Video:</b> <a href="#"> Setup Walkthough</a> (soon)</li>
+	    <li><b>Example:</b> <a href="https://demo.onepagelove.com/clutterless" target="_blank">Clutterless Demo</a></li>
 	    <li><b>Help?</b> <a href="/wp-admin/customize.php?autofocus[section]=clutterless_customizer_setup_support_option">Clutterless Pro</a> theme owners receive priority email support and additional features.</li>
 	    </ul>',
 	    'panel'       => 'clutterless_panel_setup',
@@ -100,10 +100,12 @@ function clutterless_customizer_sections ( $wp_customize ) {
 	    <li>- Email Support</li>
 	    <li>- Remove Clutterless Credit</li>
 	    <li>- More Customization</li>
+	    <li>- Multilingual Support</li>
 	    <li>- Contribute To Development</li>
-	    </ul><br /> 
+	    </ul>
+	    <br /> 
 	    </b> 
-	    <a href="#" style="display: block; text-align: center; width: 90%; background-color: #2eae2e; text-decoration: none; color: #FFF; padding: 10px 5%; border-radius: 21px;">Get Clutterless Pro for $9</a><br />(Quick secure payment, 30-day money back guarantee, your upgrade really helps support future updates.)
+	    <a href="https://onepagelove.com/go/newsletter" style="display: block; text-align: center; width: 90%; background-color: #2eae2e; text-decoration: none; color: #FFF; padding: 10px 5%; border-radius: 21px;">Get Notified when ready</a><br />(Quick secure payment, 30-day money back guarantee, your upgrade really helps support future updates.)
 	    </span>',
 	    'panel'       => 'clutterless_panel_setup',
 	  )
