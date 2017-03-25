@@ -2,19 +2,22 @@
 /**
  *
  * @package clutterless
- * @since clutterless 1.8
- * @license GPL 2.0
+ * @since clutterless 1.8.8
+ * @license CC BY 3.0
  * 
  */
 
 // -------------------------------------------------------------
-// WordPress Clean-up
+// WordPress Head Clean-up
 // -------------------------------------------------------------
 
 function clutterless_head_cleanup(){
 
     // Add default posts and comments RSS feed links to head.
     add_theme_support( 'automatic-feed-links' );
+
+    // New Title support since WP 4.1
+    add_theme_support( 'title-tag' );
 
     // Disable comments feed
     add_filter( 'feed_links_show_comments_feed', '__return_false' ); 

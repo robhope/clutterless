@@ -8,7 +8,7 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  * @package clutterless
  * @since clutterless 1.8.4
- * @license GPL 2.0
+ * @license CC BY 3.0
  * 
  */
 

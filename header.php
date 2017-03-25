@@ -6,7 +6,7 @@
  * 
  * @package clutterless
  * @since clutterless 1.8.2
- * @license GPL 2.0
+ * @license CC BY 3.0
  * 
  */
 ?>

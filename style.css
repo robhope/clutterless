@@ -1,11 +1,11 @@
 /*
 Theme Name: Clutterless
 Theme URI: https://onepagelove.com/clutterless
-Version: 1.8.6
-Description: A Minimal Blogging WordPress Theme by One Page Love. Clutterless is a free minimal single-column WordPress theme absolutely perfect for distraction-free blogging.
+Version: 1.9.0
+Description: A Minimal Blogging WordPress Theme by One Page Love. Clutterless is a free single-column WordPress theme absolutely perfect for distraction-free blogging.
 Author: One Page Love
 Author URI: https://onepagelove.com
-License: GNU General Public License
+License: Creative Commons Attribution 3.0 License
 License URI: license.txt
 Text Domain: clutterless
 Tags: one-column, left-sidebar, custom-colors, theme-options, custom-menu
@@ -46,8 +46,6 @@ input, button, textarea, select { *font-size: 100%; }
 input[type=text] { border: none; }
 
 /* --- Globals --- */
-* { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; -moz-font-feature-settings: "liga" on; margin: 0; }
-
 html { margin: 0; padding: 0; height: 100%; }
 
 ul { margin: 0; padding: 0; margin: 0 0 20px 25px; }

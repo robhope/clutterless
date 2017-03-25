@@ -52,13 +52,9 @@
                               <div id="sidebar-bio">
           
                                       <?php
-                                			$bio = get_option('clutterless_bio');
-                                			if ($bio != '') {
-                                			?>
-                                      <p><?php echo stripslashes($bio); ?></p>
-                                			<?php
-                                			} else {?>            			
-                                			<?php }?>
+					          				$clutterless_about = wp_kses_post(get_option( 'clutterless_about', 'Tell your readers why you are blogging and why they should follow you. Some basic code is cool too. You can edit this blog description in Content setup section of the <a href="./wp-admin/customize.php?autofocus[section]=clutterless_customizer_setup_content_option">Theme Customizer</a>.' ));
+					 						  echo $clutterless_about;
+					      				?>
 
                               </div><!-- /#sidebar-bio -->
                 

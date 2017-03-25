@@ -3,7 +3,7 @@
  *
  * @package clutterless
  * @since clutterless 1.8.1
- * @license GPL 2.0
+ * @license CC BY 3.0
  * 
  */
 
@@ -46,12 +46,6 @@
  	        <p><input type="text" name="logo_name" id="logo_name" size="40" value="<?php echo get_option('clutterless_logo_name'); ?>" /></p>
  	        <br />
 
- 	        <h3>About/Bio</h3>
- 	        <p><i>Why not keep it short 'n sweet...</i></p>
- 			<p><textarea name="bio" id="bio" cols="40" rows="5" value="<?php echo get_option('clutterless_bio'); ?>" /><?php $clutterless_bio_stripped = get_option('clutterless_bio');echo stripslashes($clutterless_bio_stripped);?></textarea></p>
-            <br />	
- 			<br />	
-
  	    <input type="hidden" name="action" value="save" />
  	    <p><input type="submit" name="search" value="Update Options" class="button" /></p>
  	  </form>
@@ -64,5 +58,4 @@
  function clutterless_themeoptions_update(){
  	update_option('clutterless_logo', $_POST['logo']);
  	update_option('clutterless_logo_name', $_POST['logo_name']);
- 	update_option('clutterless_bio', $_POST['bio']);
  }
