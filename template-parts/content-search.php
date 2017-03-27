@@ -3,8 +3,8 @@
  * Template part for displaying results in search pages
  *
  * @package clutterless
- * @since clutterless 2.0.0
- * @license CC BY 3.0
+ * @since clutterless 2.1.0
+ * @license GPL 2.0
  * 
  */
 ?>

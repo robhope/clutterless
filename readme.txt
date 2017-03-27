@@ -12,12 +12,6 @@ Thank you for downloading the 'Clutterless' WordPress Theme!
 ## Documentation
 - Setup video coming soon
 
-## License
-- Clutterless supports a [Creative Commons Attribution 3.0 License](http://creativecommons.org/licenses/by/3.0/)
-- This means you can use Clutterless for personal and commercial use. 
-- You can also change whatever you want but you need to keep the attribution (sidebar credit link) to One Page Love.
-- To go attribution-free and remove the link to One Page Love, simply upgrade to Pro below:
-
 ## Clutterless Pro 🎉  (coming soon)
 - [Go Pro](#) for only $9. 
 - The upgrade comes in a form of a WordPress Plugin that allows the removal of the One Page Love credit, unlocks more features and get prioity email support.

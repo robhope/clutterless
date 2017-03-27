@@ -3,7 +3,7 @@
  *
  * @package clutterless
  * @since clutterless 2.0.1
- * @license CC BY 3.0
+ * @license GPL 2.0
  * 
  */
 
