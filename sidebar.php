@@ -95,7 +95,11 @@
 							  <div class="clear"></div>
 				
 							  <div id="sidebar-credit">
-								<p><a href="https://onepagelove.com/clutterless">Clutterless WordPress Theme</a> <span class="by">by</span> <a href="https://onepagelove.com">One Page Love</a></p>
+								<p><?php 
+								// to remove this option please upgrade here: https://onepagelove.com/go/clutterless-upgrade
+								$clutterless_credit_pro = wp_kses_post(get_option( 'clutterless_credit_pro', '<a href=\"https://onepagelove.com/clutterless\">Clutterless WordPress Theme</a> <span class=\"by\">by</span> <a href=\"https://onepagelove.com\">One Page Love</a>' ));
+								echo $clutterless_credit_pro;
+								?></p>
 							  </div><!-- #sidebar-credit -->
 
 							  <div class="clear"></div>

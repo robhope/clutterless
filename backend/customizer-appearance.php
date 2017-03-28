@@ -31,7 +31,7 @@ function clutterless_customizer_setup_appearance ( $wp_customize ) {
 
     /* Sidebar Background Color */
     $wp_customize->add_setting( 'clutterless_options_theme_customizer[clutterless_sidebar_color]', array(
-        'default' => '#18BCEB'
+        'default' => '#ff4747'
     ) );
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'clutterless_options_theme_customizer_sidebar_color', array(
         'label'    => __( 'Sidebar Color', 'clutterless' ),
@@ -110,7 +110,7 @@ function clutterless_customizer_setup_appearance ( $wp_customize ) {
   
   /* Content Post Links Hover */
   $wp_customize->add_setting( 'clutterless_options_theme_customizer[clutterless_content_post_links_hover]', array(
-    'default' => '#18BCEB'
+    'default' => '#ff4747'
   ) );
   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'clutterless_options_theme_customizer_content_post_links_hover', array(
     'label'    => __( 'Content Post Links Hover', 'clutterless' ),
@@ -133,14 +133,14 @@ add_action('customize_register' , 'clutterless_customizer_setup_appearance');
         $color = get_theme_mod('clutterless_options_theme_customizer');
         $color = wp_parse_args($color, array(
             'clutterless_body_background' => '#F8F8F8',
-            'clutterless_sidebar_color' => '#18BCEB',
+            'clutterless_sidebar_color' => '#ff4747',
             'clutterless_sidebar_link_color' => '#FFFFFF',
             'clutterless_content_text_color' => '#666666',
             'clutterless_content_post_title' => '#333333',
             'clutterless_content_post_headings' => '#444444',
             'clutterless_content_post_date' => '#999999',
             'clutterless_content_post_links' => '#444444',
-            'clutterless_content_post_links_hover' => '#18BCEB',        
+            'clutterless_content_post_links_hover' => '#ff4747',        
         ));
         
         ?>

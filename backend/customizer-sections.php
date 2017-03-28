@@ -72,11 +72,6 @@ function clutterless_customizer_sections ( $wp_customize ) {
 	    'title'       => 'Documentation',
 	    'priority'    => 800,
 	    'capability'  => 'edit_theme_options',
-	    'description' => '<ul>
-	    <li><b>Video:</b> <a href="#"> Setup Walkthough</a> (soon)</li>
-	    <li><b>Example:</b> <a href="https://demo.onepagelove.com/clutterless" target="_blank">Clutterless Demo</a></li>
-	    <li><b>Help?</b> <a href="/wp-admin/customize.php?autofocus[section]=clutterless_customizer_setup_support_option">Clutterless Pro</a> theme owners receive priority email support and additional features.</li>
-	    </ul>',
 	    'panel'       => 'clutterless_panel_setup',
 	  )
 	);
@@ -92,21 +87,6 @@ function clutterless_customizer_sections ( $wp_customize ) {
 	    'title'       => 'Support & Pro Version 🎉',
 	    'priority'    => 900,
 	    'capability'  => 'edit_theme_options',
-	    'description' => '<h2>Clutterless Pro</h2>
-	    <p>Upgrade to <a href="#" target="_blank">Clutterless Pro</a> to remove credit, unlock more features and get priority email support.</p>
-	    <span style="font-style: normal">
-	    <b>
-	    <ul>
-	    <li>- Email Support</li>
-	    <li>- Remove Clutterless Credit</li>
-	    <li>- More Customization</li>
-	    <li>- Multilingual Support</li>
-	    <li>- Contribute To Development</li>
-	    </ul>
-	    <br /> 
-	    </b> 
-	    <a href="https://onepagelove.com/go/newsletter" style="display: block; text-align: center; width: 90%; background-color: #2eae2e; text-decoration: none; color: #FFF; padding: 10px 5%; border-radius: 21px;">Get Notified when ready</a><br />(Quick secure payment, 30-day money back guarantee, your upgrade really helps support future updates.)
-	    </span>',
 	    'panel'       => 'clutterless_panel_setup',
 	  )
 	);

@@ -31,6 +31,13 @@ function clutterless_customizer_setup_documentation ( $wp_customize ) {
         'section'   => 'clutterless_customizer_setup_documentation_option',
         'label'     => ' ',
         'priority'  => 801,
+        'description' => '<span style="font-style: normal">
+        <ul>
+        <li><b>Video:</b> <a href="https://onepagelove.com/go/clutterless-setup">Clutterless Setup</a></li>
+        <li><b>Example:</b> <a href="https://demo.onepagelove.com/clutterless" target="_blank">Clutterless Demo</a></li>
+        <li><b>Help?</b> <a href="/wp-admin/customize.php?autofocus[section]=clutterless_customizer_setup_support_option">Visit Support Panel</a></li>
+        </ul>
+        </span>',        
     ));        
 
 }
