@@ -31,6 +31,8 @@ function clutterless_head_cleanup(){
     // Remove p tags from category description
     remove_filter('term_description','wpautop');  
 
+    // There is no Post Thumbnail support, uncomment to enable
+    // add_theme_support( "post-thumbnails" );
 }
 
 add_action( 'after_setup_theme', 'clutterless_head_cleanup' );

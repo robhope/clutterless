@@ -18,7 +18,9 @@ function clutterless_customizer_setup_content ( $wp_customize ) {
 	#-------------------------------------------------------------------------------  
 
 	# Option: Logo
-	$clutterless_logo = (get_option( 'clutterless_logo' )) ? get_option( 'clutterless_logo' ) : "Default.";
+	$clutterless_logo = (get_option( 'clutterless_logo' )) ? get_option( 'clutterless_logo' ) : 
+	"Default.";
+
 	$wp_customize->add_setting( 'clutterless_logo',
 		array(
 			'default' => '',
@@ -50,7 +52,9 @@ function clutterless_customizer_setup_content ( $wp_customize ) {
 	#-------------------------------------------------------------------------------  
 
 	# Option: About
-	$clutterless_about = (get_option( 'clutterless_about' )) ? get_option( 'clutterless_about' ) : "Tell your readers why you are blogging and why they should follow you. Some basic code is cool too.";
+	$clutterless_about = (get_option( 'clutterless_about' )) ? get_option( 'clutterless_about' ) : 
+	"Tell your readers why you are blogging and why they should follow you. Some basic code is cool too.";
+
 	$wp_customize->add_setting( 'clutterless_about',
 		array(
 			'default' => 'Tell your readers why you are blogging and why they should follow you. Some basic code is cool too.',
@@ -83,10 +87,12 @@ function clutterless_customizer_setup_content ( $wp_customize ) {
     #-------------------------------------------------------------------------------  
 
     # Option: Credit 
-    $clutterless_credit = (get_option( 'clutterless_credit' )) ? get_option( 'clutterless_credit' ) : "'&#169;' . date('Y') . ' ' . get_bloginfo( 'name', 'display' ) . '. All Rights Reserved.'";
+    $clutterless_credit = (get_option( 'clutterless_credit' )) ? get_option( 'clutterless_credit' ) : 
+    "©2017 All Rights Reserved.";
+
     $wp_customize->add_setting( 'clutterless_credit',
         array(
-            'default' => '&#169;' . date("Y") . ' ' . get_bloginfo( 'name', 'display' ) . '. All Rights Reserved.',
+            'default' => '©2017. All Rights Reserved.',
             'type'    => 'option',
             'sanitize_callback' => 'clutterless_credit_sanitize',        
         )

@@ -6,7 +6,7 @@ Thank you for downloading the 'Clutterless' WordPress Theme!
 - [Theme Page](https://onepagelove.com/clutterless) (features and screenshot)
 - [Direct Download Link](https://onepagelove.com/go/download-clutterless)
 - [Demo](https://demo.onepagelove.com/clutterless)
-= [Documentation](https://onepagelove.com/go/clutterless-setup) (video walkthrough)
+- [Documentation](https://onepagelove.com/go/clutterless-setup) (video walkthrough)
 - HTML Version (coming soon)
 - PSD Tempate (coming soon)
 
