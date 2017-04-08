@@ -1,6 +1,32 @@
 /* --- Globals --- */
 
 //-------------------------------------------------------------------------------
+// Setting the rems globally
+//-------------------------------------------------------------------------------
+
+html {
+	font-size: $font-normal;
+}
+
+@media (min-width: $bp-external) {
+	html { 
+		font-size: $font-huge; 
+	}
+}
+
+@media (min-width: $bp-desktop) and (max-width: $bp-external) {
+	html { 
+		font-size: $font-large; 
+	}
+}
+
+@media (max-width: $bp-mobile) {
+	html { 
+		font-size: $font-small;
+	}
+}
+
+//-------------------------------------------------------------------------------
 // General styles
 //-------------------------------------------------------------------------------
 
@@ -12,10 +38,21 @@ html {
 ul {
 	margin: 0;
 	padding: 0;
-	margin: 0 0 20px 25px;
+	margin: 0 0 $spacing-20 1.563rem; // 20 25
+	
 	li {
 		list-style-type: circle;
-		padding: 0 0 5px 5px;
+		padding: 0 0 $spacing-10 $spacing-5;
+	}
+}
+ol {
+	margin: 0;
+	padding: 0;
+	margin: 0 0 $spacing-20 1.563rem; // 0 0 20 25
+
+	li {
+		list-style-type: decimal;
+		padding: 0 0 $spacing-10 0;
 	}
 }
 li {
@@ -23,8 +60,8 @@ li {
 	padding: 0;
 }
 body {
-	font-size: 14px;
-	line-height: 22px;
+	font-size: 0.875rem; // 14
+	line-height: 1.375rem; // 22
 	line-height: 100%;
 	margin: 0;
 	padding: 0;
@@ -36,29 +73,29 @@ a {
 	}
 	img {
 		border: none;
-		vertical-align: top;
+		vertical-align: top; 
 	}
 }
 img {
 	&.alignright {
-		margin: 10px 0 0 20px;
+		margin: $spacing-10 0 0 $spacing-20;
 		float: right;
 	}
 	&.alignleft {
-		margin: 10px 20px 0 0;
+		margin: $spacing-10 $spacing-20 0 0;
 		float: left;
 	}
 	&.aligncenter {
 		clear: both;
 		display: block;
-		margin: 0 auto 10px auto;
+		margin: 0 auto $spacing-10 auto;
 	}
 }
 .relative {
 	position: relative;
 }
 p {
-	margin-bottom: 20px;
+	margin-bottom: $spacing-20;
 }
 b {
 	font-weight: bold;
@@ -70,20 +107,13 @@ strong {
 	clear: both;
 }
 h4 {
-	margin: 0 0 10px 0;
+	margin: 0 0 $spacing-10 0;
 }
 h5 {
-	margin: 0 0 10px 0;
+	margin: 0 0 $spacing-10 0;
 }
 h6 {
-	margin: 0 0 10px 0;
-}
-ol {
-	margin: 0 0 20px 25px;
-	li {
-		list-style-type: decimal;
-		padding: 0 0 10px 0;
-	}
+	margin: 0 0 $spacing-10 0;
 }
 i {
 	font-style: italic;
@@ -94,7 +124,7 @@ em {
 hr {
 	border: none;
 	border-bottom: 1px dotted;
-	margin: 20px 0;
+	margin: $spacing-20 0;
 }
 del {
 	text-decoration: line-through;

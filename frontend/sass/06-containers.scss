@@ -5,10 +5,17 @@
 //-------------------------------------------------------------------------------
 
 #content {
-	width: 600px; 
+	width: 37.5rem; // 600
 	margin: 0 auto;  
-	padding: 0 0 75px 0; 
-	margin-top: 100px;
+	padding: 0 0 4.688rem 0; // 0 0 75 0
+	margin-top: $spacing-100; // 100 
+
+	@media (max-width: $bp-tablet) {
+		width: auto; 
+		max-width: 90%; 
+		padding-bottom: 0; 
+		margin-top: 0; 
+	}
 
 	a {
 		transition-duration: 0.3s;
@@ -18,97 +25,112 @@
 	}
 
 	.post {
-		padding: 60px 0 25px 0; 
-		margin: 0 0 0px 0; 
-		width: 600px;
+		padding: $spacing-60 0 1.563rem 0; // 60 0 25 0
+		margin: 0 0 0 0; 
+		width: 37.5rem; // 600
 		border-top: 1px solid #FFFFFF; 
 		box-shadow: 0 -1px 0 #DDDDDD;
 
+		@media (max-width: $bp-tablet) {
+			clear: both;
+			max-width: 100%;
+		}
+
 		.post-date {
-			font-size: 11px; 
-			line-height: 11px; 
+			font-size: 0.6875rem; // 11
+			line-height: 0.6875rem; // 11
 			text-transform: uppercase; 
-			margin-bottom: 5px; 
-			font-weight: 300; 
-			letter-spacing: 0.5px;
+			margin-bottom: $spacing-5; 
+			letter-spacing: 0.03125rem; // .5
 		}
 
 		.post-title {
-			margin-bottom: 35px;
+			margin-bottom: 2.188rem; // 35
 
 			h2 {
 				margin-top: 0;
 				font-weight: 600; 
-				letter-spacing: -1px; 
-				font-size: 40px; 
-				line-height: 46px;
+				letter-spacing: -1px; // -1
+				font-size: 2.5rem; // 40
+				line-height: 2.875rem; // 46
 			}
 		}
 
 		.post-content {
-			font-size: 19px; 
-			line-height: 29px;  
+			font-size: 1.188rem; // 19
+			line-height:  1.813rem;  // 29
 			margin: 0;
 			padding: 0;
 		}
 
 		p {
-			font-size: 19px; 
-			line-height: 30px;  
-			margin: 0 0 35px 0; 
+			font-size: 1.188rem; // 19
+			line-height: 1.875rem; // 30  
+			margin: 0 0 2.188rem 0; // 0 0 35 0
 			padding: 0; 
-			letter-spacing: -0.1px;
+			letter-spacing: -0.00625rem; // -0.1
 		}
 
 		h2 {
-			font-size: 28px; 
-			line-height: 32px;  
-			margin: 60px 0 30px 0; 
-			letter-spacing: -1px;
+			font-size: 1.75rem; // 28
+			line-height: 2rem;  // 32
+			margin: 3.75rem 0 1.875rem  0; // 60 0 30 0
+			letter-spacing: -0.0625rem; // -1
 		}
 
 		h3 {
-			font-size: 24px; 
-			line-height: 28px;  
-			margin: 50px 0 20px 0; 
-			letter-spacing: -1px;
+			font-size: 1.5rem; // 24
+			line-height: 1.75rem; // 28 
+			margin: 3.125rem 0 $spacing-20 0; // 50 0 20 0
+			letter-spacing: -0.0625rem; // -1
 		}
 
 		h4 {
-			font-size: 20px; 
-			line-height: 24px;  
-			margin: 40px 0 10px 0; 
-			letter-spacing: -1px;
+			font-size: 1.25rem; // 20
+			line-height: 1.5rem;  // 24
+			margin: $spacing-40 0 $spacing-10 0; 
+			letter-spacing: -0.0625rem; // -1
 		}
 
 		img {
-			max-width: 580px; 
+			max-width: 36.25rem; // 580
 			height: auto;  
-			padding: 10px;  
-			box-shadow:0px 0px 5px 0px #EEE;
+			padding: $spacing-10;  
+			box-shadow: 0 0 $spacing-5 0 #EEE;
+
+			@media (max-width: $bp-tablet) {
+				max-width: 94%;
+			}
+
 		}
+
 		.wp-caption {
 			text-align: center;
+
+			@media (max-width: $bp-tablet) {
+				max-width: 94%;
+			}
+
 		}
+
 		p.wp-caption-text {
 			opacity: 0.5; 
-			font-size: 16px; 
-			line-height: 18px; 
-			padding: 5px 0; 
+			font-size: 1rem; // 16
+			line-height: 1.125rem; // 18
+			padding: $spacing-5 0; 
 		}
 
 		blockquote {
-			letter-spacing: -0.1px; 
 			font-style: italic; 
-			padding: 0 0 0 20px; 
-			margin: 40px 0 40px 20px;
+			padding: 0 0 0 $spacing-20; 
+			margin: $spacing-40 0 $spacing-40 $spacing-20;
 			border-left: 1px dotted #999;
+			letter-spacing: -0.0625rem; // -1
 		}
 
 	}
 
 }
-
 
 //-------------------------------------------------------------------------------
 // AJAX Load Button
@@ -117,21 +139,21 @@
 #pbd-alp-load-posts a:link, 
 #pbd-alp-load-posts a:visited {
 	display: block;  
-	width: 300px;  
-	margin: 0 auto 100px auto;	
+	width: 18.75rem; // 300 
+	margin: 0 auto $spacing-100 auto;	
 	text-align: center;	
-	padding: 10px 7px 14px 7px; 
+	padding: $spacing-10 0.4375rem 0.875rem 0.4375rem; // 10 7 14 7
 	border: none; 
 	background: #F5F5F5; 
-	font-size: 14px; 
-	line-height: 14px; 
+	font-size: 0.875rem; // 14
+	line-height: 0.875rem; // 14
 	color: #999;
 	letter-spacing: 1px;
 	text-decoration: none;   
 	text-transform: uppercase; 
 	border-top: 1px solid #FFF; 
 	border-bottom: 1px solid #E5e5e5;
-	border-radius:  4px;
+	border-radius: $rounded-corners;
 }
 #pbd-alp-load-posts a:hover, 
 #pbd-alp-load-posts a:active {
@@ -149,12 +171,16 @@ body.single #content .post {
 	border-top: 0;
 	box-shadow: 0 0 0;
 	padding-top: 0;
+
+	@media (max-width: $bp-tablet) {
+		padding-top: $spacing-60; 
+	}
 }
 
 .return {
-	font-size: 12px; 
+	font-size: 0.75rem; // 12
 	text-transform: uppercase; 
-	margin-bottom: 50px;
+	margin-bottom: $spacing-50; // 50
 }
 
 //-------------------------------------------------------------------------------
@@ -164,11 +190,11 @@ body.single #content .post {
 // Note: the 100 search results are set in functions.php
 
 #search-page #search-header #search-term {
-	letter-spacing: -2px; 
-	font-size: 32px;
+	letter-spacing: -2px; // -2
+	font-size: 2rem; // 32
 }
 #search-page #search {
-	padding: 20px 0; 
+	padding: $spacing-20 0; 
 	border-top: 1px solid rgba(255, 255, 255, .15);
 	-webkit-background-clip: padding-box;   
 	background-clip: padding-box;
@@ -177,10 +203,10 @@ body.single #content .post {
 		border: none; 
 		background-color: #EEE; 
 		color: #111; 
-		height: 20px; 
+		height: $spacing-20; 
 		width: 94%; 
-		padding: 4px 10px 6px 10px; 
-		font-size: 12px;
+		padding: 0.25rem $spacing-10 0.375rem $spacing-10; // 4 10 6 10
+		font-size: 0.75rem; // 12
 	}
 
 	#search-form #search-button {
@@ -190,20 +216,19 @@ body.single #content .post {
 
 #search-page .archive-post {
 	border-bottom: 1px solid #EEE; 
-	padding: 0px 0 10px 0; 
-	margin: 10px 0 10px;
+	padding: 0 0 $spacing-10 0; 
+	margin: $spacing-10 0 $spacing-10;
 
 	.archive-date {
-		font-size: 10px; 
-		line-height: 10px; 
+		font-size: 0.625rem; // 10
+		line-height: 0.625rem; // 10
 		text-transform: uppercase; 
-		font-weight: 300; 
-		letter-spacing: 0.5px; 
+		letter-spacing: 0.03125rem; // .5
 		color: #999;
 	}
 	.archive-title {
-		font-size: 18px; 
-		line-height: 22px; 
+		font-size: 1.125rem; // 18
+		line-height: 1.375rem; // 22
 		margin: 0; 
 	}
 }

@@ -4,7 +4,7 @@
  * Theme sidebar used on all pages
  * 
  * @package clutterless
- * @since clutterless 2.1.0
+ * @since clutterless 2.4.2
  * @license GPL 2.0
  * 
  */
@@ -22,35 +22,43 @@
    
 				<div id="sidebar-logo">
 
-					  <div class="logo">
+					<div class="logo">
 		  
 						<?php if ( get_theme_mod( 'clutterless_logo' ) ) : ?>
 
-							<div class="logo-image">
+						<div class="logo-image">
 
 							<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'>
 								<img src='<?php echo esc_url( get_theme_mod( 'clutterless_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'>
 							</a>
 
-							</div><!-- .logo-image -->
+						</div><!-- .logo-image -->
 							
 						<?php else : ?>
 
-							<!-- no logo -->
+						<!-- no logo -->
 
 						<?php endif; ?>
 
-						<div class="logo-name">
-					
-							<h1><a href="<?php print get_home_url(); ?>" title="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h1>
-  		
-						</div><!-- .logo-name -->
+						<div class="logo-name-holder">
 
-						<div class="tagline"><?php bloginfo('description'); ?></div><!-- .tagline -->
+							<div class="logo-name">
+						
+								<h1><a href="<?php print get_home_url(); ?>" title="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h1>
+	  		
+							</div><!-- .logo-name -->
 
-						<div class="clear"></div>
+							<div class="tagline">
 
-					  </div><!-- #logo -->
+								<?php bloginfo('description'); ?>
+								
+							</div><!-- .tagline -->
+
+							<div class="clear"></div>					
+
+						</div>
+
+					</div><!-- #logo -->
 		
 				</div><!-- #sidebar-logo -->
 				

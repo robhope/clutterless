@@ -2,13 +2,13 @@
 /**
  *
  * @package clutterless
- * @since clutterless 2.1.0
+ * @since clutterless 2.4.2
  * @license GPL 2.0
  * 
  */
 ?>
 
-<div class="post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="post-date">
 

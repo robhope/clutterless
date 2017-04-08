@@ -5,34 +5,46 @@
 // REMS based off 16px body font
 // 60px = 6vw if view point is 1000px
 
-$base-large				: 16px; // 18px; 
-$base-normal			: 16px; // aka standard
-$base-small				: 14px; // 14px;
+$font-huge				: 20px; 
+$font-large				: 18px; 
+$font-normal			: 16px; // standard
+$font-small				: 14px;
 
 //-------------------------------------------------------------------------------
-// Sizing references
+// Spacing
 //-------------------------------------------------------------------------------
 
-$spacing-mega			: 10rem; 	 // 160px
-$spacing-huge			: 5rem; 	 // 80px
-$spacing-big			: 2.5rem; 	 // 40px
-$spacing-m-b			: 1.875rem;  // 30px
-$spacing-medium			: 1.25rem; 	 // 20px
-$spacing-s-m  			: 0.9375rem; // 15px
-$spacing-small  		: 0.625rem;  // 10px
-$spacing-tiny   		: 0.3125rem; // 5px
+// Yup.. I know the un-semantic naming below is frowned upon but the whole
+// point of the REM sizing is so the global sizing changes easily on bigger and small 
+// screens - all based off the Font Base right at top. So I'm spacing off 1 screen size:
+
+$spacing-5	 			: 0.3125rem; 	// 5px
+$spacing-10	 			: 0.625rem; 	// 10px
+$spacing-15	 			: 0.9375rem; 	// 15px
+$spacing-20	 			: 1.25rem; 		// 20px
+$spacing-25	 			: 1.563rem; 	// 25px
+$spacing-30	 			: 1.875rem;   	// 30px
+$spacing-40	 			: 2.5rem;  		// 40px
+$spacing-50	 			: 3.125rem; 	// 50px
+$spacing-60	 			: 3.75rem; 		// 60px
+$spacing-70	 			: 4.375rem; 	// 70px
+$spacing-80	 			: 5rem; 		// 80px
+$spacing-90	 			: 5.625rem;		// 90px
+$spacing-100 			: 6.25rem; 		// 100px
 
 //-------------------------------------------------------------------------------
 // Font families
 //-------------------------------------------------------------------------------
 
-$font-heading				: "Oswald", Arial, serif;
-$font-body 					: "Lora", Georgia, sans-serif;
+$font-heading			: "Oswald", Arial, serif;
+$font-body 				: "Lora", Georgia, sans-serif;
 
 //-------------------------------------------------------------------------------
 // Breakpoints
 //-------------------------------------------------------------------------------
 
+$bp-external			: 1650px;
+$bp-desktop				: 1250px;
 $bp-tablet		 		: 720px;
 $bp-mobile 		 		: 500px;
 
@@ -44,7 +56,7 @@ $rounded-corners	 	: 4px;
 $rounded-buttons	 	: 2px;
 
 //-------------------------------------------------------------------------------
-// Font Sizes
+// Font Size References
 //-------------------------------------------------------------------------------
 
 // 0.5px = 0.03125rem
@@ -68,5 +80,3 @@ $rounded-buttons	 	: 2px;
 // 18px = 1.125rem
 // 19px = 1.188rem
 // 20px = 1.25rem
-// 30px = 1.875rem  
-// 40px = 2.5rem
