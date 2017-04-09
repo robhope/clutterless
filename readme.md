@@ -7,15 +7,10 @@ Thank you for downloading the 'Clutterless' WordPress Theme!
 - [Direct Download Link](https://onepagelove.com/go/download-clutterless)
 - [Demo](https://demo.onepagelove.com/clutterless)
 - [Documentation](https://onepagelove.com/go/clutterless-setup) (video walkthrough)
-- HTML Version (coming soon)
-- PSD Tempate (coming soon)
-
-## Documentation
-- Setup video coming soon
 
 ## Clutterless Pro 🎉 
 - [Go Pro](https://onepagelove.com/go/clutterless-upgrade) for only $9. 
-- The upgrade comes in a form of a WordPress Plugin that includes a neat option to easily remove the One Page Love credit, unlocks more features and get prioity email support.
+- The upgrade comes in a form of a WordPress Plugin that includes a neat option to easily remove the One Page Love credit, unlocks more features, includes the @2x Retina PSD and get prioity email support.
 - Simply install the Pro Plugin, hit activate and all the magic happens - no need to install a new WordPress theme.
 
 ## Frequently Asked Questions
