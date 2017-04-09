@@ -10,7 +10,7 @@ Thank you for downloading the 'Clutterless' WordPress Theme!
 
 ## Clutterless Pro 🎉 
 - [Go Pro](https://onepagelove.com/go/clutterless-upgrade) for only $9. 
-- The upgrade comes in a form of a WordPress Plugin that includes a neat option to easily remove the One Page Love credit, unlocks more features, includes the @2x Retina PSD and get prioity email support.
+- The upgrade comes in a form of a WordPress Plugin that includes a neat option to easily remove the One Page Love credit, unlocks more features, includes the @2x Retina PSD and get priority email support.
 - Simply install the Pro Plugin, hit activate and all the magic happens - no need to install a new WordPress theme.
 
 ## Frequently Asked Questions
