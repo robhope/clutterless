@@ -4,7 +4,7 @@ Author: One Page Love
 Author URI: https://onepagelove.com
 Theme URI: https://onepagelove.com/clutterless
 Description: A Minimal Blogging WordPress Theme by One Page Love. Clutterless is a free single-column WordPress theme absolutely perfect for distraction-free blogging.
-Version: 2.5
+Version: 2.5.1
 License: GPLv2 or later 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: clutterless
@@ -218,15 +218,17 @@ body.search-results #pbd-alp-load-posts { display: none; }
 /* --- Sidebar --- */
 #sidebar { z-index: 1000; text-shadow: none; position: fixed; top: 6.25rem; left: 0; width: 1.25rem; padding: 0 0 0 0.1875rem; text-align: center; -webkit-transition-duration: .3s; transition-duration: .3s; }
 
-#sidebar-name { left: 0; white-space: nowrap; text-transform: uppercase; font-size: 0.6875rem; letter-spacing: 1px; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); }
+#sidebar-inner { left: -28.13rem; }
+
+#sidebar-inner.sb-inner-active { left: 0; -webkit-transition: 0.5s ease; transition: 0.5s ease; }
+
+#sidebar-name { left: 0; white-space: nowrap; text-transform: uppercase; font-size: 0.6875rem; letter-spacing: 1px; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); -webkit-transition: 0.9s ease; transition: 0.9s ease; }
+
+#sidebar-name.sb-name-active { position: relative; left: 28.13rem; -webkit-transition: 0.5s ease; transition: 0.5s ease; }
 
 #sidebar-name .sidebar-name-wrap { padding: 0.3125rem 0.625rem 1.188rem 0.625rem; border-radius: 0.3125rem 0.3125rem 0 0; font-size: 0.75rem; }
 
-#sidebar-inner { position: fixed; top: 0; left: -28.13rem; width: 21.88rem; padding: 0 3.125rem; height: 100%; -webkit-transition-duration: .3s; transition-duration: .3s; text-align: left; }
-
-#sidebar:hover { left: 28.13rem; }
-
-#sidebar:hover #sidebar-inner { left: 0; }
+#sidebar-inner { position: fixed; top: 0; width: 21.88rem; padding: 0 3.125rem; height: 100%; -webkit-transition-duration: .3s; transition-duration: .3s; text-align: left; }
 
 #sidebar-logo .logo { margin: 6.25rem 0 1.25rem 0; height: 3.125rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -264,13 +266,14 @@ body.search-results #pbd-alp-load-posts { display: none; }
 
 #sidebar #sidebar-dropdown { display: none; margin-top: -0.4375rem; }
 
-@media (max-width: 720px) { #sidebar { float: auto; display: block; position: relative; height: auto; top: 0; width: auto !important; left: 0 !important; padding: 0 !important; margin: 0 !important; }
+@media (max-width: 720px) { #sidebar { display: block; position: relative; height: auto; top: 0; width: auto !important; left: 0 !important; padding: 0 !important; margin: 0 !important; }
   #sidebar #sidebar-name { display: none; }
-  #sidebar #sidebar-inner { float: auto; isplay: block; top: 0; left: 0 !important; position: relative; padding: 2% 5%; width: auto; }
+  #sidebar #sidebar-inner { float: auto; display: block; top: 0; left: 0; position: relative; padding: 2% 5%; width: auto; }
   #sidebar #sidebar-inner #sidebar-logo { float: left; }
   #sidebar #sidebar-inner #sidebar-logo .logo { margin: 15px 0 1.25rem 0; }
   #sidebar #sidebar-dropdown { display: block; float: right; padding-top: 0.625rem; }
   #sidebar #sidebar-dropdown a { font-size: 3.75rem; line-height: 3.75rem; opacity: 0.6; }
   #sidebar #sidebar-dropdown a:hover { opacity: 1; }
   #sidebar #sidebar-dropdown a:active { opacity: 1; }
-  #sidebar-mobile-info { display: none; } }
+  #sidebar #sidebar-mobile-info { display: none; }
+  #sidebar #sidebar-mobile-info.mobile-menu-active { display: block !important; } }

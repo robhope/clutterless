@@ -2,7 +2,7 @@
 /**
  *
  * @package clutterless
- * @since clutterless 2.1.0
+ * @since clutterless 2.5.1
  * @license GPL 2.0
  * 
  */

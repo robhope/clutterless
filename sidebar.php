@@ -4,7 +4,7 @@
  * Theme sidebar used on all pages
  * 
  * @package clutterless
- * @since clutterless 2.4.2
+ * @since clutterless 2.5.1
  * @license GPL 2.0
  * 
  */
@@ -14,7 +14,7 @@
   
 		<div id="sidebar-name">
 
-		  <span class="sidebar-name-wrap"><?php bloginfo('name'); ?></span>
+		  <span class="sidebar-name-wrap"><a href="#"><?php bloginfo('name'); ?></a></span>
 
 		</div><!-- #sidebar-name -->
 		
@@ -64,7 +64,7 @@
 				
 				<!-- Mobile dropdown menu button -->
 				<div id="sidebar-dropdown">
-					 <a href="#" onclick="toggle_visibility('sidebar-mobile-info');"><svg enable-background="new 0 0 24 24" fill="#FFFFFF" height="24px" version="1.1" viewBox="0 0 24 24" width="24px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"><g><g><path d="M23.244,17.009H0.75c-0.413,0-0.75,0.36-0.75,0.801v3.421C0,21.654,0.337,22,0.75,22h22.494c0.414,0,0.75-0.346,0.75-0.77    V17.81C23.994,17.369,23.658,17.009,23.244,17.009z M23.244,9.009H0.75C0.337,9.009,0,9.369,0,9.81v3.421    c0,0.424,0.337,0.769,0.75,0.769h22.494c0.414,0,0.75-0.345,0.75-0.769V9.81C23.994,9.369,23.658,9.009,23.244,9.009z     M23.244,1.009H0.75C0.337,1.009,0,1.369,0,1.81V5.23c0,0.423,0.337,0.769,0.75,0.769h22.494c0.414,0,0.75-0.346,0.75-0.769V1.81    C23.994,1.369,23.658,1.009,23.244,1.009z"/></g></g></svg></a>
+					 <a href="#"><svg enable-background="new 0 0 24 24" fill="#FFFFFF" height="24px" version="1.1" viewBox="0 0 24 24" width="24px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px"><g><g><path d="M23.244,17.009H0.75c-0.413,0-0.75,0.36-0.75,0.801v3.421C0,21.654,0.337,22,0.75,22h22.494c0.414,0,0.75-0.346,0.75-0.77    V17.81C23.994,17.369,23.658,17.009,23.244,17.009z M23.244,9.009H0.75C0.337,9.009,0,9.369,0,9.81v3.421    c0,0.424,0.337,0.769,0.75,0.769h22.494c0.414,0,0.75-0.345,0.75-0.769V9.81C23.994,9.369,23.658,9.009,23.244,9.009z     M23.244,1.009H0.75C0.337,1.009,0,1.369,0,1.81V5.23c0,0.423,0.337,0.769,0.75,0.769h22.494c0.414,0,0.75-0.346,0.75-0.769V1.81    C23.994,1.369,23.658,1.009,23.244,1.009z"/></g></g></svg></a>
 				</div><!-- #sidebar-dropdown -->
 				
 				<div class="clear"></div>

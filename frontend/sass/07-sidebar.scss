@@ -16,6 +16,15 @@
 	transition-duration:.3s;
 }
 
+	#sidebar-inner {
+		left: -28.13rem; // 450
+		&.sb-inner-active {
+			left: 0;
+			transition: 0.5s ease;
+		}
+	}	
+
+
 	//-------------------------------------------------------------------------------
 	// The 90 degree name
 	//-------------------------------------------------------------------------------
@@ -31,6 +40,14 @@
 	    -ms-transform: rotate(90deg);
 	    -o-transform: rotate(90deg);
 	    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	    transition: 0.9s ease;
+
+		// Show sidebar when class is active 
+		&.sb-name-active {
+			position: relative;
+			left: 28.13rem; // 450
+			transition: 0.5s ease;
+		}
 
 		.sidebar-name-wrap { 
 			padding: $spacing-5 $spacing-10 1.188rem $spacing-10; // x x 19 x
@@ -47,23 +64,11 @@
 	#sidebar-inner {
 		position: fixed;
 		top: 0;
-		left: -28.13rem; // 450
 		width: 21.88rem; // 350
 		padding: 0 $spacing-50;
 		height: 100%;
 		transition-duration: .3s;
 		text-align: left;	
-	}
-
-	//-------------------------------------------------------------------------------
-	// The mouse over magic
-	//-------------------------------------------------------------------------------
-
-	#sidebar:hover {
-		left: 28.13rem; // 450
-	}
-	#sidebar:hover #sidebar-inner {
-		left: 0;
 	}
 
 	//-------------------------------------------------------------------------------
@@ -242,7 +247,6 @@
 @media (max-width: $bp-tablet) {
 
 	#sidebar {
-		float: auto;
 		display: block;
 		position: relative; 
 		height: auto; 
@@ -258,9 +262,9 @@
 
 		#sidebar-inner {
 			float: auto; 
-			isplay: block; 
+			display: block; 
 			top: 0; 
-			left: 0 !important;  
+			left: 0;  
 			position: relative; 
 			padding: 2% 5%; 
 			width: auto; 
@@ -293,11 +297,18 @@
 				opacity: 1;
 			}
 		} 
-	}
 
-	// Default hide sidebar on mobile until the JS whips out the info (after you click the nav button)
-	#sidebar-mobile-info {
-		display: none;
-	}
+		// Default hide sidebar on mobile until the JS whips out the info (after you click the nav button)
+		#sidebar-mobile-info {
+			display: none;
 
+			&.mobile-menu-active {
+				display: block !important;
+			}
+
+		}	
+
+	}
+	
 }
+

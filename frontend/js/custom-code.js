@@ -2,39 +2,24 @@
 // Mobile Nav Toggle
 // ------------------------------------------------------------------------
 
-function toggle_visibility(id) {
-var e = document.getElementById(id);
-if(e.style.display == 'block')
-e.style.display = 'none';
-else
-e.style.display = 'block';
-}
+var btnmobile  = document.querySelector('#sidebar-dropdown a');
+var menumobile = document.querySelector('#sidebar-mobile-info');
+
+btnmobile.addEventListener('click' , function(event){
+  event.preventDefault();
+  btnmobile.classList.toggle('mobile-btn-active');
+  menumobile.classList.toggle('mobile-menu-active');
+});
 
 // ------------------------------------------------------------------------
-// iPad Tap Slider
+// Sidebar Slideout
 // ------------------------------------------------------------------------
 
-if (navigator.userAgent.match(/iPad/i) != null) {
-	$(function() {
-				
-		function slideIn() {
-			$('#sidebar').css({left:'450px'});
-			$('#sidebar-inner').css({left:'0px'});
-		}
-		function slideOut() {
-			$('#sidebar').css({left:'0px'});
-			$('#sidebar-inner').css({left:'-450px'});
-		}
-		
-  		$('#sidebar-name').click( function(e) {
-			if ($('#sidebar').position().left == 0)
-				slideIn();
-			else
-				slideOut();
-		});
-				
-		$('#ipad-click').click( function() {
-			slideOut();
-		})
-	});
-}
+var btnsidebar  = document.querySelector('#sidebar-name');
+var menusidebar = document.querySelector('#sidebar-inner');
+
+btnsidebar.addEventListener('click' , function(event){
+  event.preventDefault();
+  btnsidebar.classList.toggle('sb-name-active');
+  menusidebar.classList.toggle('sb-inner-active');
+});
