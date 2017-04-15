@@ -4,7 +4,7 @@
 // Color Scheme
 //-------------------------------------------------------------------------------
 
-// browser background 
+// Browser background 
 body {background: #F8F8F8;}
 
 // Links Default 
@@ -23,8 +23,11 @@ a:hover {color: #333;}
 #search-field::placeholder
 {color: #FFF;}
 
+// Blog Content
+#content, body.search-results #search-field::placeholder {color: #666;}
+
 // Blog titles 
-#content  .post-date, #content  .post-date a, .return a {color:  #999;}
+#content .post-date, #content .post-date a, .return a {color:  #999;}
 #content .post-title h2, #content .post-title h2 a {color: #333;}
 
 // Blog links 
@@ -33,7 +36,7 @@ a:hover {color: #333;}
 #content .post-content a:hover 
 {color: #18bceb; border-bottom: 1px dotted #18bceb; }
 
-// Blog headings & Bold 
+// Blog headings & bold 
 #content  .post-content h2,
 #content  .post-content h3,
 #content  .post-content h4

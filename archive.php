@@ -3,7 +3,7 @@
  * The template for displaying archives
  *
  * @package clutterless
- * @since clutterless 2.1.0
+ * @since clutterless 2.5.2
  * @license GPL 2.0
  *
  */
@@ -12,34 +12,43 @@ get_header(); global $paged; ?>
 
 <div id="search-page">
 
-	<div class="post">
+	<div id="search-header">
 
-		<div id="search-results">
-
-			<?php $my_100_query = new WP_Query('posts_per_page=100'); ?>
-
-			<?php while ( $my_100_query->have_posts() ) {
-			$my_100_query->the_post();
-			?>
-
-			<div class="archive-post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-				<div class="archive-date"><?php echo the_time(get_option('date_format')) ?></div><!-- .archive-date -->
-
-				<div class="archive-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div><!-- .archive-title -->
-
-			</div><!-- .archive-post -->
+		<div id="search-term" class="archive-term">
 
 			<?php 
-			} ?>
 
-			<?php wp_reset_query(); // reset main query ?>
+				if (function_exists('is_tag') && is_tag()) { // tags
 
-			<div class="clear"></div>    
+					echo $wp_query->found_posts, _n( ' ', ' ', $wp_query->found_posts);
+					echo ' posts tagged with ';
+					echo single_tag_title();
 
-		</div><!-- #search-results -->
+				}
 
-	</div><!-- /.post -->
+				else { // category
+
+					// echo 'You are browsing the ';
+					echo single_cat_title();
+					echo ' category';	
+
+				};
+
+			?>
+
+		</div><!-- #search-term -->    
+
+		<div class="clear"></div>
+
+	</div><!-- #search-header -->
+
+	<div id="search-results">
+
+		<?php get_template_part( 'template-parts/content', 'archive' ); ?>  
+
+		<div class="clear"></div>     
+
+	</div><!-- #search-results -->
 
 	<?php get_template_part( 'template-parts/link', 'home' ); ?> 
 

@@ -179,7 +179,9 @@ body.single #content .post {
 
 .return {
 	font-size: 0.75rem; // 12
+	line-height: 0.75rem; // 12
 	text-transform: uppercase; 
+	margin-top: $spacing-50; // 50
 	margin-bottom: $spacing-50; // 50
 }
 
@@ -192,7 +194,14 @@ body.single #content .post {
 #search-page #search-header #search-term {
 	letter-spacing: -2px; // -2
 	font-size: 2rem; // 32
+	line-height: 2rem; // 32
+
+	&.archive-term {
+		display: block;
+		margin-bottom: $spacing-40;
+	}
 }
+
 #search-page #search {
 	padding: $spacing-20 0; 
 	border-top: 1px solid rgba(255, 255, 255, .15);

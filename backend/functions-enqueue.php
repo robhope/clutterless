@@ -2,7 +2,7 @@
 /**
  *
  * @package clutterless
- * @since clutterless 2.5.1
+ * @since clutterless 2.5.2
  * @license GPL 2.0
  * 
  */
@@ -35,7 +35,7 @@ add_action( 'wp_enqueue_scripts' , 'clutterless_enqueue_styles' );
 function clutterless_enqueue_scripts() {
 
 	# Custom Scripts 
-	wp_register_script  ( 'clutterless-custom-code' , get_template_directory_uri().'/frontend/js/custom-code-min.js' , array(), clutterless_theme_version, true ); 
+	wp_register_script  ( 'clutterless-custom-code' , get_template_directory_uri().'/frontend/js/custom-code-min.js' , array(), clutterless_theme_version, true );
 	wp_enqueue_script ( 'clutterless-custom-code' );  
 
 }
