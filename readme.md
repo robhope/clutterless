@@ -46,8 +46,8 @@ Thank you for downloading the 'Clutterless' WordPress Theme!
 
 Hope you enjoy the new version of Clutterless!
 
-Much love,<br />
+Much love,
 Rob 
 
-Email: [rob@onepagelove.com](mailto:rob@onepagelove.com)<br />
+Email: [rob@onepagelove.com](mailto:rob@onepagelove.com)
 Twitter: [@hitdelete](https://twitter.com/hitdelete)

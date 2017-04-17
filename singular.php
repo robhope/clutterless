@@ -3,7 +3,7 @@
  * The template for displaying all single posts and pages
  *
  * @package clutterless
- * @since clutterless 2.5.2
+ * @since clutterless 2.5.3
  * @license GPL 2.0
  * 
  */
@@ -16,7 +16,7 @@ get_header(); ?>
 			<div class="post-date">
 
 				<?php if ( is_single() ) { echo '<a href="', the_permalink(), '">', the_time(get_option('date_format')), '</a> - '; }; // date ?>
-				<?php if ( is_single() ) { echo the_category(', ', 'parents' ); }; // categories ?>
+				<?php $categorycount = get_categories('hide_empty=0'); if ( is_single() && count($categorycount) > 1 ) { echo the_category(', ', 'parents' ); }; // show category if user has more than one ?>
 
 			</div><!-- .post-date -->
 
