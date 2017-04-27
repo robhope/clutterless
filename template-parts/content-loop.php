@@ -2,7 +2,7 @@
 /**
  *
  * @package clutterless
- * @since clutterless 2.4.2
+ * @since clutterless 2.5.4
  * @license GPL 2.0
  * 
  */
@@ -12,7 +12,8 @@
 
 	<div class="post-date">
 
-		<a href="<?php the_permalink(); ?>"><?php echo the_time(get_option('date_format')); ?></a>
+		<?php echo '<a href="', the_permalink(), '">', the_time(get_option('date_format')), '</a>'; ?>
+		<?php $categorycount = get_categories('hide_empty=0'); if ( is_single() && count($categorycount) > 1 ) { echo ' - '; echo the_category(', ', 'parents' ); }; // show category if user has more than one ?>
 
 	</div><!-- .post-date -->
 

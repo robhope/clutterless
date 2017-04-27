@@ -8,7 +8,7 @@
  * E.g., it puts together the home page when no home.php file exists.
  *
  * @package clutterless
- * @since clutterless 2.1.0
+ * @since clutterless 2.5.4
  * @license GPL 2.0
  *
  */
@@ -16,11 +16,11 @@ get_header(); ?>
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<?php get_template_part('template-parts/content','loop'); ?>
+		<?php get_template_part('template-parts/content','loop'); ?>
 
 	<?php endwhile; else: ?>
 
-	<p>Sorry, no posts matched your criteria.</p>
+		<p>Sorry, no posts matched your criteria.</p>
 
 	<?php endif; ?>
 
