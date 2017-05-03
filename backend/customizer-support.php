@@ -2,7 +2,7 @@
 /**
  *
  * @package clutterless
- * @since clutterless 2.4.3
+ * @since clutterless 2.5.5
  * @license GPL 2.0
  * 
  */
@@ -39,7 +39,8 @@ function clutterless_customizer_setup_support ( $wp_customize ) {
         <li>- Email Support</li>
         <li>- Option to remove OPL Credit</li>
         <li>- More Customization</li>
-        <li>- Retina @2x PSD version</li>
+        <li>- Retina @2x PSD download</li>
+        <li>- Child Theme download</li>        
         <li>- Contribute To Development</li>
         </ul>
         <br /> 
