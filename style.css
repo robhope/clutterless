@@ -4,7 +4,7 @@ Author: One Page Love
 Author URI: https://onepagelove.com
 Theme URI: https://onepagelove.com/clutterless
 Description: A Minimal Blogging WordPress Theme by One Page Love. Clutterless is a free single-column WordPress theme absolutely perfect for distraction-free blogging.
-Version: 2.5.5
+Version: 2.5.6
 License: GPLv2 or later 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: clutterless
@@ -159,49 +159,49 @@ a:hover { color: #333; }
 
 @media (max-width: 720px) { #content { width: auto; max-width: 90%; padding-bottom: 0; margin-top: 0; } }
 
-#content a { -webkit-transition-duration: 0.3s; transition-duration: 0.3s; }
+#content a { transition-duration: 0.3s; }
 
-#content a:hover { -webkit-transition-duration: 0.1s; transition-duration: 0.1s; }
+#content a:hover { transition-duration: 0.1s; }
 
-#content .post { padding: 3.75rem 0 1.563rem 0; margin: 0 0 0 0; width: 37.5rem; border-top: 1px solid #FFFFFF; box-shadow: 0 -1px 0 #DDDDDD; }
+#content .post, #content .page { padding: 3.75rem 0 1.563rem 0; margin: 0 0 0 0; width: 37.5rem; border-top: 1px solid #FFFFFF; box-shadow: 0 -1px 0 #DDDDDD; }
 
-@media (max-width: 720px) { #content .post { clear: both; max-width: 100%; } }
+@media (max-width: 720px) { #content .post, #content .page { clear: both; max-width: 100%; } }
 
-#content .post .post-date { font-size: 0.6875rem; line-height: 0.6875rem; text-transform: uppercase; margin-bottom: 0.3125rem; letter-spacing: 0.03125rem; }
+#content .post .post-date, #content .page .post-date { font-size: 0.6875rem; line-height: 0.6875rem; text-transform: uppercase; margin-bottom: 0.3125rem; letter-spacing: 0.03125rem; }
 
-#content .post .post-title { margin-bottom: 2.188rem; }
+#content .post .post-title, #content .page .post-title { margin-bottom: 2.188rem; }
 
-#content .post .post-title h2 { margin-top: 0; font-weight: 600; letter-spacing: -1px; font-size: 2.5rem; line-height: 2.875rem; }
+#content .post .post-title h2, #content .page .post-title h2 { margin-top: 0; font-weight: 600; letter-spacing: -1px; font-size: 2.5rem; line-height: 2.875rem; }
 
-#content .post .post-content { font-size: 1.188rem; line-height: 1.813rem; margin: 0; padding: 0; }
+#content .post .post-content, #content .page .post-content { font-size: 1.188rem; line-height: 1.813rem; margin: 0; padding: 0; }
 
-#content .post p { font-size: 1.188rem; line-height: 1.875rem; margin: 0 0 2.188rem 0; padding: 0; letter-spacing: -0.00625rem; }
+#content .post p, #content .page p { font-size: 1.188rem; line-height: 1.875rem; margin: 0 0 2.188rem 0; padding: 0; letter-spacing: -0.00625rem; }
 
-#content .post h2 { font-size: 1.75rem; line-height: 2rem; margin: 3.75rem 0 1.875rem  0; letter-spacing: -0.0625rem; }
+#content .post h2, #content .page h2 { font-size: 1.75rem; line-height: 2rem; margin: 3.75rem 0 1.875rem  0; letter-spacing: -0.0625rem; }
 
-#content .post h3 { font-size: 1.5rem; line-height: 1.75rem; margin: 3.125rem 0 1.25rem 0; letter-spacing: -0.0625rem; }
+#content .post h3, #content .page h3 { font-size: 1.5rem; line-height: 1.75rem; margin: 3.125rem 0 1.25rem 0; letter-spacing: -0.0625rem; }
 
-#content .post h4 { font-size: 1.25rem; line-height: 1.5rem; margin: 2.5rem 0 0.625rem 0; letter-spacing: -0.0625rem; }
+#content .post h4, #content .page h4 { font-size: 1.25rem; line-height: 1.5rem; margin: 2.5rem 0 0.625rem 0; letter-spacing: -0.0625rem; }
 
-#content .post img { max-width: 36.25rem; height: auto; padding: 0.625rem; box-shadow: 0 0 0.3125rem 0 #EEE; }
+#content .post img, #content .page img { max-width: 36.25rem; height: auto; padding: 0.625rem; box-shadow: 0 0 0.3125rem 0 #EEE; }
 
-@media (max-width: 720px) { #content .post img { max-width: 94%; } }
+@media (max-width: 720px) { #content .post img, #content .page img { max-width: 94%; } }
 
-#content .post .wp-caption { text-align: center; }
+#content .post .wp-caption, #content .page .wp-caption { text-align: center; max-width: 100%; }
 
-@media (max-width: 720px) { #content .post .wp-caption { max-width: 94%; } }
+@media (max-width: 720px) { #content .post .wp-caption, #content .page .wp-caption { max-width: 94%; } }
 
-#content .post p.wp-caption-text { opacity: 0.5; font-size: 1rem; line-height: 1.125rem; padding: 0.3125rem 0; }
+#content .post p.wp-caption-text, #content .page p.wp-caption-text { opacity: 0.5; font-size: 1rem; line-height: 1.125rem; padding: 0.3125rem 0; }
 
-#content .post blockquote { font-style: italic; padding: 0 0 0 1.25rem; margin: 2.5rem 0 2.5rem 1.25rem; border-left: 1px dotted #999; letter-spacing: -0.0625rem; }
+#content .post blockquote, #content .page blockquote { font-style: italic; padding: 0 0 0 1.25rem; margin: 2.5rem 0 2.5rem 1.25rem; border-left: 1px dotted #999; letter-spacing: -0.0625rem; }
 
 #pbd-alp-load-posts a:link, #pbd-alp-load-posts a:visited { display: block; width: 18.75rem; margin: 0 auto 6.25rem auto; text-align: center; padding: 0.625rem 0.4375rem 0.875rem 0.4375rem; border: none; background: #F5F5F5; font-size: 0.875rem; line-height: 0.875rem; color: #999; letter-spacing: 1px; text-decoration: none; text-transform: uppercase; border-top: 1px solid #FFF; border-bottom: 1px solid #E5e5e5; border-radius: 4px; }
 
 #pbd-alp-load-posts a:hover, #pbd-alp-load-posts a:active { background-color: #FFFFFF; color: #333; }
 
-body.single #content .post { border-top: 0; box-shadow: 0 0 0; padding-top: 0; }
+body.single #content .post, body.page #content .page { border-top: 0; box-shadow: 0 0 0; padding-top: 0; }
 
-@media (max-width: 720px) { body.single #content .post { padding-top: 3.75rem; } }
+@media (max-width: 720px) { body.single #content .post, body.page #content .page { padding-top: 3.75rem; } }
 
 .return { font-size: 0.75rem; line-height: 0.75rem; text-transform: uppercase; margin-top: 3.125rem; margin-bottom: 3.125rem; }
 
@@ -224,19 +224,19 @@ body.single #content .post { border-top: 0; box-shadow: 0 0 0; padding-top: 0; }
 body.search-results #pbd-alp-load-posts { display: none; }
 
 /* --- Sidebar --- */
-#sidebar { z-index: 1000; text-shadow: none; position: fixed; top: 6.25rem; left: 0; width: 1.25rem; padding: 0 0 0 0.1875rem; text-align: center; -webkit-transition-duration: .3s; transition-duration: .3s; }
+#sidebar { z-index: 1000; text-shadow: none; position: fixed; top: 6.25rem; left: 0; width: 1.25rem; padding: 0 0 0 0.1875rem; text-align: center; transition-duration: .3s; }
 
 #sidebar-inner { left: -28.13rem; }
 
-#sidebar-inner.sb-inner-active { left: 0; -webkit-transition: 0.5s ease; transition: 0.5s ease; }
+#sidebar-inner.sb-inner-active { left: 0; transition: 0.5s ease; }
 
-#sidebar-name { left: 0; white-space: nowrap; text-transform: uppercase; font-size: 0.6875rem; letter-spacing: 1px; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); -webkit-transition: 0.9s ease; transition: 0.9s ease; }
+#sidebar-name { left: 0; white-space: nowrap; text-transform: uppercase; font-size: 0.6875rem; letter-spacing: 1px; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); transition: 0.9s ease; }
 
-#sidebar-name.sb-name-active { position: relative; left: 28.13rem; -webkit-transition: 0.5s ease; transition: 0.5s ease; }
+#sidebar-name.sb-name-active { position: relative; left: 28.13rem; transition: 0.5s ease; }
 
 #sidebar-name .sidebar-name-wrap { padding: 0.3125rem 0.625rem 1.188rem 0.625rem; border-radius: 0.3125rem 0.3125rem 0 0; font-size: 0.75rem; }
 
-#sidebar-inner { position: fixed; top: 0; width: 21.88rem; padding: 0 3.125rem; height: 100%; -webkit-transition-duration: .3s; transition-duration: .3s; text-align: left; }
+#sidebar-inner { position: fixed; top: 0; width: 21.88rem; padding: 0 3.125rem; height: 100%; transition-duration: .3s; text-align: left; }
 
 #sidebar-logo .logo { margin: 6.25rem 0 1.25rem 0; height: 3.125rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 

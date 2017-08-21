@@ -24,7 +24,8 @@
 		transition-duration: 0.1s;
 	}
 
-	.post {
+	.post,
+	.page {
 		padding: $spacing-60 0 1.563rem 0; // 60 0 25 0
 		margin: 0 0 0 0; 
 		width: 37.5rem; // 600
@@ -106,6 +107,7 @@
 
 		.wp-caption {
 			text-align: center;
+			max-width: 100%;
 
 			@media (max-width: $bp-tablet) {
 				max-width: 94%;
@@ -167,7 +169,8 @@
 
 // Reuses all archive styles
 
-body.single #content .post { 
+body.single #content .post,
+body.page #content .page { 
 	border-top: 0;
 	box-shadow: 0 0 0;
 	padding-top: 0;
