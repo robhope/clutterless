@@ -2,7 +2,7 @@
 /**
  *
  * @package clutterless
- * @since clutterless 2.5.6
+ * @since clutterless 2.5.7
  * @license GPL 2.0
  * 
  */
@@ -31,7 +31,23 @@
 
 	<div class="post-title">
 
-		<h2><?php the_title(); ?></h2> 
+		<?php 
+
+			$title = esc_html( get_the_title() ); // get the page or post title
+
+			if ( is_singular() ) {
+
+				echo '<h1>' . $title . '</h1>';
+
+			}
+		
+			else {
+
+				echo '<h2>' . $title . '</h2>';
+
+			};
+
+		?>
 
 	</div><!-- .post-title -->
 

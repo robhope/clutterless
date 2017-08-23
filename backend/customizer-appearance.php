@@ -2,7 +2,7 @@
 /**
  *
  * @package clutterless
- * @since clutterless 2.5.2
+ * @since clutterless 2.5.7
  * @license GPL 2.0
  * 
  */
@@ -184,7 +184,7 @@ function clutterless_customizer_styles(){
         {color:<?php echo $color['clutterless_sidebar_link_color']; ?>;}
         #content, body.search-results #search-field::placeholder
         {color: <?php echo $color['clutterless_content_text_color']; ?>;}
-        #content .post-title h2, #content .post-title h2 a
+        #content .post-title h1, #content .post-title h1 a, #content .post-title h2
         {color: <?php echo $color['clutterless_content_post_title']; ?>;}
         #content  .post-content h2,#content  .post-content h3,#content  .post-content h4
         {color: <?php echo $color['clutterless_content_post_headings']; ?>;}

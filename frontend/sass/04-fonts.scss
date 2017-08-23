@@ -16,11 +16,12 @@ body {
 }
 
 // Thick Heading Font
+.post-title h1,
 .post-title h2,
 .post-content h2,
 .post-content h3,
 .post-content h4,
-.logo-name h1, 
+.logo-name, 
 .sidebar-widget-title,
 #search-term {
 	font-family: $font-heading;

@@ -4,7 +4,7 @@
  * Theme sidebar used on all pages
  * 
  * @package clutterless
- * @since clutterless 2.5.1
+ * @since clutterless 2.5.7
  * @license GPL 2.0
  * 
  */
@@ -44,7 +44,7 @@
 
 							<div class="logo-name">
 						
-								<h1><a href="<?php print get_home_url(); ?>" title="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h1>
+								<a href="<?php print get_home_url(); ?>" title="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a>
 	  		
 							</div><!-- .logo-name -->
 
