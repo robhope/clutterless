@@ -3,7 +3,7 @@
  *
  * @package clutterless
  * @since clutterless 2.5.2
- * @license GPL 2.0
+ *  @license CCA 3.0
  * 
  */
 

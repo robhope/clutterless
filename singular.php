@@ -4,7 +4,7 @@
  *
  * @package clutterless
  * @since clutterless 2.5.4
- * @license GPL 2.0
+ *  @license CCA 3.0
  * 
  */
 get_header(); ?>

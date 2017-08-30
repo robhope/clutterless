@@ -2,8 +2,8 @@
 /**
  *
  * @package clutterless
- * @since clutterless 2.0.1
- * @license GPL 2.0
+ * @since clutterless 2.6
+ *  @license CCA 3.0
  * 
  */
 
@@ -67,25 +67,10 @@ function clutterless_customizer_sections ( $wp_customize ) {
 	#-------------------------------------------------------------------------------
 
 	$wp_customize->add_section( 
-	  'clutterless_customizer_setup_documentation_option', 
+	  'clutterless_customizer_setup_docs_option', 
 	  array(
 	    'title'       => 'Documentation',
 	    'priority'    => 800,
-	    'capability'  => 'edit_theme_options',
-	    'panel'       => 'clutterless_panel_setup',
-	  )
-	);
-
-
-	#-------------------------------------------------------------------------------
-	# Add Section: Support & Pro Version
-	#-------------------------------------------------------------------------------
-
-	$wp_customize->add_section( 
-	  'clutterless_customizer_setup_support_option', 
-	  array(
-	    'title'       => 'Support & Pro Version 🎉',
-	    'priority'    => 900,
 	    'capability'  => 'edit_theme_options',
 	    'panel'       => 'clutterless_panel_setup',
 	  )

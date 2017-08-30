@@ -4,8 +4,8 @@
  * Theme sidebar used on all pages
  * 
  * @package clutterless
- * @since clutterless 2.5.7
- * @license GPL 2.0
+ * @since clutterless 2.6
+ *  @license CCA 3.0
  * 
  */
 ?>
@@ -104,8 +104,8 @@
 				
 							  <div id="sidebar-credit">
 								<p><?php 
-								// to remove this option please upgrade here: https://onepagelove.com/go/clutterless-upgrade
-								$clutterless_credit_pro = wp_kses_post(get_option( 'clutterless_credit_pro', '<a href=\"https://onepagelove.com/clutterless\">Clutterless WordPress Theme</a> <span class=\"by\">by</span> <a href=\"https://onepagelove.com\">One Page Love</a>' ));
+								// To edit this credit please buy a license here: https://onepagelove.com/clutterless
+								$clutterless_credit_pro = wp_kses_post(get_option( 'clutterless_credit_pro_free', '<a href=\"https://onepagelove.com/clutterless\">Clutterless WordPress Theme</a> <span class=\"by\">by</span> <a href=\"https://onepagelove.com\">One Page Love</a>' ));
 								echo $clutterless_credit_pro;
 								?></p>
 							  </div><!-- #sidebar-credit -->

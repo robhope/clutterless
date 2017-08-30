@@ -4,14 +4,13 @@ Thank you for downloading the 'Clutterless' WordPress Theme!
 
 ## Useful links and info:
 - [Theme Page](https://onepagelove.com/clutterless) (features and screenshot)
-- [Direct Download Link](https://onepagelove.com/go/download-clutterless)
+- [Direct Download Link](https://onepagelove.com/download/clutterless/)
 - [Demo](https://demo.onepagelove.com/clutterless)
 - [Documentation](https://onepagelove.com/go/clutterless-setup) (video walkthrough)
 
-## Clutterless Pro 🎉 
-- [Go Pro](https://onepagelove.com/go/clutterless-upgrade) for only $9. 
-- The upgrade comes in a form of a WordPress Plugin that includes a neat option to easily remove the One Page Love credit, unlocks more features, includes the @2x Retina PSD and get priority email support.
-- Simply install the Pro Plugin, hit activate and all the magic happens - no need to install a new WordPress theme.
+## Remove the CC3.0 license for only $5.
+This WordPress theme holds a [CCA 3.0 License](https://creativecommons.org/licenses/by/3.0/) - meaning you can do whatever you want (even commercially) but you need to keep the theme footer credit linking back to One Page Love. To remove the credit simply buy a license on the template download page on One Page Love:
+[https://onepagelove.com/clutterless](https://onepagelove.com/clutterless)
 
 ## Frequently Asked Questions
 
@@ -46,8 +45,6 @@ Thank you for downloading the 'Clutterless' WordPress Theme!
 
 Hope you enjoy the new version of Clutterless!
 
-Much love,
-Rob 
-
-Email: [rob@onepagelove.com](mailto:rob@onepagelove.com)
-Twitter: [@hitdelete](https://twitter.com/hitdelete)
+Much love,  
+Rob  
+[@robhope](https://twitter.com/robhope)
