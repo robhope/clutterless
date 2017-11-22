@@ -2,8 +2,8 @@
 /**
  *
  * @package clutterless
- * @since clutterless 2.1.0
- *  @license CCA 3.0
+ * @since clutterless 2.6.1
+ * @license CCA 3.0
  * 
  */
 
@@ -13,7 +13,7 @@
 
 $clutterless_update_theme = new ThemeUpdateChecker(
   'clutterless',
-  'https://onepagelove.com/updates/?action=get_metadata&slug=clutterless'
+  'https://onepagetemplates.com/updates/?action=get_metadata&slug=clutterless'
 );
 
 ?>
