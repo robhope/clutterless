@@ -5,7 +5,7 @@ Thank you for downloading the 'Clutterless' WordPress Theme!
 ## Useful links and info:
 - [Theme Page](https://onepagelove.com/clutterless) (features and screenshot)
 - [Direct Download Link](https://onepagelove.com/download/clutterless/)
-- [Demo](https://demo.onepagelove.com/clutterless)
+- [Demo](https://demos.onepagelove.com/clutterless)
 - [Documentation](https://onepagelove.com/go/clutterless-setup) (video walkthrough)
 
 ## Remove the CC3.0 license for only $5.
@@ -29,7 +29,7 @@ This WordPress theme holds a [CCA 3.0 License](https://creativecommons.org/licen
 - There are no links pages or posts on the Home page, the theme is designed to be an uninterrupted reading experience starting from the newest posts. You can create of course create pages if you wish. There is also a theme setting to link to posts just like a normal blog.
 
 ### What about SEO? How do search bots crawl the site?
-- All the titles in the archives link to the post which allow a crawl and index. Also direct links are there to share, no problem, see [this page link](https://demo.onepagelove.com/clutterless/clutterless-focuses-on-content/).
+- All the titles in the archives link to the post which allow a crawl and index. Also direct links are there to share, no problem, see [this page link](https://demos.onepagelove.com/clutterless/clutterless-focuses-on-content/).
 
 ## Credits
 - [Lora](https://fonts.google.com/specimen/Lora) (Body) and [Oswald](https://fonts.google.com/specimen/Oswald) (Heading) Google Fonts used
