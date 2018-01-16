@@ -2,7 +2,7 @@
 /**
  *
  * @package clutterless
- * @since clutterless 2.6.1
+ * @since clutterless 2.6.2
  *  @license CCA 3.0
  * 
  */
@@ -34,7 +34,7 @@ function clutterless_customizer_setup_docs ( $wp_customize ) {
         'description' => '<span style="font-style: normal">
         <ul>
         <li><b>Video:</b> <a href="https://onepagelove.com/go/clutterless-setup">Clutterless Setup</a></li>
-        <li><b>Example:</b> <a href="https://demo.onepagetemplates.com/clutterless" target="_blank">Clutterless Demo</a></li>
+        <li><b>Example:</b> <a href="https://demo.onepagelove.com/clutterless" target="_blank">Clutterless Demo</a></li>
         <li><b>PSD:</b> <a href="https://onepagelove.com/download/clutterless-psd/">Download</a></li>
         <li><b>Child Theme:</b> <a href="https://onepagelove.com/download/clutterless-child-theme/">Download</a></li>        
         <li><b>Help?</b> <a href="https://twitter.com/robhope">@robhope</a></li>

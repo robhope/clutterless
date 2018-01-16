@@ -2,7 +2,7 @@
 /**
  *
  * @package clutterless
- * @since clutterless 2.6.1
+ * @since clutterless 2.6.2
  *  @license CCA 3.0
  * 
  */
@@ -11,7 +11,7 @@
 # Theme definitions
 # ------------------------------------------------------------------------
 
-define( 'clutterless_theme_version' , '2.6.1' );  		# Theme version
+define( 'clutterless_theme_version' , '2.6.2' );  		# Theme version
 if ( ! isset( $content_width ) ) $content_width = 600;  # Content Width
 
 # ------------------------------------------------------------------------
